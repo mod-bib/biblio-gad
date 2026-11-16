@@ -104,6 +104,14 @@ gbo:isIncludedInVolume a owl:ObjectProperty .
 
 gbo:isPartOfSection a owl:DatatypeProperty .
 
+<https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal> a crm:E39_Actor ;
+    rdfs:label "Biblioteca Archivio Liberati"^^xsd:string ;
+    gbo:hasIdentifier "actor_bal"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/actor/actor_btm> a crm:E39_Actor ;
+    rdfs:label "Biblioteca Trivulziana di Milano"^^xsd:string ;
+    gbo:hasIdentifier "actor_btm"^^xsd:string .
+
 <https://github.com/mod-bib/biblio-gad/ontology/person/person_ceg> a schema1:Person ;
     schema1:birthDate "1893-11-14"^^xsd:date ;
     schema1:birthPlace <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
