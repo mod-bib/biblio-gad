@@ -18,18 +18,6 @@
  ] .
 
 #################################################################
-#    Annotation properties
-#################################################################
-
-###  http://rdaregistry.info/Elements/m/P30011_has_date_of_publication
-rdam:P30011_has_date_of_publication rdf:type owl:AnnotationProperty .
-
-
-###  https://github.com/mod-bib/biblio-gad/ontology/publisher
-gbo:publisher rdf:type owl:AnnotationProperty .
-
-
-#################################################################
 #    Datatypes
 #################################################################
 
@@ -213,47 +201,49 @@ gbo:isIncludedInVolume rdf:type owl:ObjectProperty ;
                        rdfs:range gbo:Publication .
 
 
+###  https://github.com/mod-bib/biblio-gad/ontology/publisher
+gbo:publisher rdf:type owl:ObjectProperty ;
+              rdfs:domain gbo:Publication ;
+              rdfs:range gbo:PublishingHouse .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://rdaregistry.info/Elements/m/P30011__has_date_of_publication
-rdam:P30011__has_date_of_publication rdf:type owl:DatatypeProperty ;
-                                     rdfs:domain [ rdf:type owl:Class ;
-                                                   owl:unionOf ( lrmoo:F3_Manifestation
-                                                                 gbo:ComponentPublication
-                                                               )
-                                                 ] ;
-                                     rdfs:range [ rdf:type rdfs:Datatype ;
-                                                  owl:unionOf ( xsd:date
-                                                                xsd:gYear
-                                                                xsd:gYearMonth
+###  http://rdaregistry.info/Elements/m/P30011_has_date_of_publication
+rdam:P30011_has_date_of_publication rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain [ rdf:type owl:Class ;
+                                                  owl:unionOf ( gbo:ComponentPublication
+                                                                gbo:Publication
                                                               )
-                                                ] .
+                                                ] ;
+                                    rdfs:range [ rdf:type rdfs:Datatype ;
+                                                 owl:unionOf ( xsd:date
+                                                               xsd:gYear
+                                                               xsd:gYearMonth
+                                                             )
+                                               ] .
 
 
 ###  http://rdaregistry.info/Elements/m/P30106_has_series_statement
 rdam:P30106_has_series_statement rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain lrmoo:F3_Manifestation ;
-                                 rdfs:range xsd:string .
+                                 rdfs:domain gbo:Publication .
 
 
 ###  http://schema.org/birthDate
 schema1:birthDate rdf:type owl:DatatypeProperty ;
-                  rdfs:domain schema1:Person ;
-                  rdfs:range xsd:date .
+                  rdfs:domain schema1:Person .
 
 
 ###  http://schema.org/deathDate
 schema1:deathDate rdf:type owl:DatatypeProperty ;
-                  rdfs:domain schema1:Person ;
-                  rdfs:range xsd:date .
+                  rdfs:domain schema1:Person .
 
 
 ###  http://schema.org/genre
 schema1:genre rdf:type owl:DatatypeProperty ;
-              rdfs:domain lrmoo:F1_Work ;
-              rdfs:range xsd:string .
+              rdfs:domain lrmoo:F1_Work .
 
 
 ###  http://schema.org/pagination
@@ -262,8 +252,7 @@ schema1:pagination rdf:type owl:DatatypeProperty ;
                                  owl:unionOf ( gbo:ComponentPublication
                                                gbo:Publication
                                              )
-                               ] ;
-                   rdfs:range xsd:string .
+                               ] .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasCompositionDateFrom
@@ -463,11 +452,11 @@ gbo:PublishingHouse rdf:type owl:Class .
                                                                                                                       gbo:ComponentPublication ;
                                                                                                              rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
                                                                                                              gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico> ;
+                                                                                                             rdam:P30011_has_date_of_publication "1943-07-15"^^xsd:date ;
                                                                                                              schema1:pagination "253" ;
                                                                                                              gbo:hasIdentifier "componentpublication_la_benignità_1943" ;
                                                                                                              gbo:hasPublicationType "Prosa/racconto in rivista" ;
                                                                                                              gbo:hasTitle "La benignità" ;
-                                                                                                             rdam:P30011_has_date_of_publication "1943-07-15"^^xsd:date ;
                                                                                                              gbo:isIncludedInPeriodicalIssue "periodicalissue_primato_A4_N14" .
 
 
@@ -707,13 +696,13 @@ gbo:PublishingHouse rdf:type owl:Class .
                                                                                  lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps> ;
                                                                                  rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze> ;
                                                                                  rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+                                                                                 gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier> ;
+                                                                                 rdam:P30011_has_date_of_publication "1944"^^xsd:gYear ;
                                                                                  rdam:P30106_has_series_statement "Quaderni di letteratura e d'arte; 8-9" ;
                                                                                  gbo:hasIdentifier "publication_l'a_1944" ;
                                                                                  gbo:hasNote "Edizione di 1000 esemplari numerati" ;
                                                                                  gbo:hasPublicationType "Libri e raccolte d'autore" ;
-                                                                                 gbo:hasTitle "L'Adalgisa - Disegni milanesi" ;
-                                                                                 rdam:P30011_has_date_of_publication "1944"^^xsd:gYear ;
-                                                                                 gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier> .
+                                                                                 gbo:hasTitle "L'Adalgisa - Disegni milanesi" .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945
@@ -722,13 +711,13 @@ gbo:PublishingHouse rdf:type owl:Class .
                                                                                  lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione> ;
                                                                                  rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze> ;
                                                                                  rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+                                                                                 gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier> ;
+                                                                                 rdam:P30011_has_date_of_publication "1945"^^xsd:gYear ;
                                                                                  rdam:P30106_has_series_statement "Quaderni di letteratura e d'arte; 8-9" ;
                                                                                  gbo:hasIdentifier "publication_l'a_1945" ;
                                                                                  gbo:hasNote "Edizione di 1200 esemplari numerati" ;
                                                                                  gbo:hasPublicationType "Libri e raccolte d'autore" ;
-                                                                                 gbo:hasTitle "L'Adalgisa - Disegni milanesi" ;
-                                                                                 rdam:P30011_has_date_of_publication "1945"^^xsd:gYear ;
-                                                                                 gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier> .
+                                                                                 gbo:hasTitle "L'Adalgisa - Disegni milanesi" .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955
@@ -762,12 +751,12 @@ gbo:PublishingHouse rdf:type owl:Class .
                                                                                  rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
                                                                                  rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
                                                                                  gbo:editor <https://github.com/mod-bib/biblio-gad/ontology/person/person_vela> ;
+                                                                                 gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_adelphi> ;
+                                                                                 rdam:P30011_has_date_of_publication "2012"^^xsd:gYear ;
                                                                                  rdam:P30106_has_series_statement "Biblioteca Adelphi; 592" ;
                                                                                  gbo:hasIdentifier "publication_l'a_2012" ;
                                                                                  gbo:hasPublicationType "Libri e raccolte d'autore" ;
-                                                                                 gbo:hasTitle "L'Adalgisa - Disegni milanesi" ;
-                                                                                 rdam:P30011_has_date_of_publication "2012"^^xsd:gYear ;
-                                                                                 gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_adelphi> .
+                                                                                 gbo:hasTitle "L'Adalgisa - Disegni milanesi" .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1955
