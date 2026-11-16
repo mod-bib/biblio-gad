@@ -208,6 +208,16 @@ gbo:isPartOfSection a owl:DatatypeProperty .
     gbo:hasTitle "La benignità"^^xsd:string .
 
 <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> a lrmoo:F1_Work ;
+    lrmoo:R3_is_realised_by <https://github.com/mod-bib/biblio-gad/ontology/expr/expr_al_parco_in_una_sera_di_maggio_princeps>,
+        <https://github.com/mod-bib/biblio-gad/ontology/expr/expr_al_parco_in_una_sera_di_maggio_seconda_edizione>,
+        <https://github.com/mod-bib/biblio-gad/ontology/expr/expr_al_parco_in_una_sera_di_maggio_sf>,
+        <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico> ;
+    rdaw:P10072_has_manifestation_of_work <https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_la_benignità_1943>,
+        <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_1944>,
+        <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_1945>,
+        <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_1955>,
+        <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_1988>,
+        <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_2012> ;
     schema1:genre "Racconto"^^xsd:string ;
     gbo:hasIdentifier "work_al_parco_in_una_sera_di_maggio"^^xsd:string ;
     gbo:hasSourceWork <https://github.com/mod-bib/biblio-gad/ontology/work/work_fulmine> ;
@@ -288,6 +298,14 @@ gbo:isPartOfSection a owl:DatatypeProperty .
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string .
 
 <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> a lrmoo:F1_Work ;
+    lrmoo:R3_is_realised_by <https://github.com/mod-bib/biblio-gad/ontology/expr/expr_la_seconda_edizione>,
+        <https://github.com/mod-bib/biblio-gad/ontology/expr/expr_la_sf>,
+        <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps> ;
+    rdaw:P10072_has_manifestation_of_work <https://github.com/mod-bib/biblio-gad/ontology/pub/pub_la_1945>,
+        <https://github.com/mod-bib/biblio-gad/ontology/pub/pub_la_1955>,
+        <https://github.com/mod-bib/biblio-gad/ontology/pub/pub_la_1988>,
+        <https://github.com/mod-bib/biblio-gad/ontology/pub/pub_la_2012>,
+        <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944> ;
     schema1:genre "Narrativa"^^xsd:string ;
     gbo:hasIdentifier "work_l'a"^^xsd:string ;
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string .
