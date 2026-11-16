@@ -350,3 +350,15 @@ gbo:isPartOfSection a owl:DatatypeProperty .
     gbo:hasIdentifier "person_vela"^^xsd:string ;
     gbo:hasName "Claudio Vela"^^xsd:string .
 
+<https://github.com/mod-bib/biblio-gad/ontology/place/place_roma> a schema1:Place ;
+    rdfs:label "Roma"^^xsd:string ;
+    gbo:hasIdentifier "place_roma"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze> a schema1:Place ;
+    rdfs:label "Firenze"^^xsd:string ;
+    gbo:hasIdentifier "place_firenze"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> a schema1:Place ;
+    rdfs:label "Milano"^^xsd:string ;
+    gbo:hasIdentifier "place_milano"^^xsd:string .
+
