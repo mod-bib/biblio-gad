@@ -32,8 +32,6 @@ rdai:P40069_has_related_work_of_item a owl:ObjectProperty .
 
 rdam:P30011__has_date_of_publication a owl:DatatypeProperty .
 
-rdam:P30011_has_date_of_publication a owl:DatatypeProperty .
-
 rdam:P30088_has_place_of_publication a owl:ObjectProperty .
 
 rdam:P30106_has_series_statement a owl:DatatypeProperty .
