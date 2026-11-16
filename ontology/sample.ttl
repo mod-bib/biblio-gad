@@ -15,6 +15,8 @@ lrmoo:R2_is_derivative_of a owl:ObjectProperty .
 
 lrmoo:R3i_realises a owl:ObjectProperty .
 
+lrmoo:R3_is_realised_by a owl:ObjectProperty .
+
 lrmoo:R4_is_embodied_in a owl:ObjectProperty .
 
 lrmoo:R4i_embodies a owl:ObjectProperty .
