@@ -9,7 +9,6 @@
 @prefix rdaw: <http://rdaregistry.info/Elements/w/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema1: <http://schema.org/> .
-@prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 lrmoo:R2_is_derivative_of a owl:ObjectProperty .
@@ -59,10 +58,6 @@ schema1:genre a owl:DatatypeProperty .
 schema1:pagination a owl:DatatypeProperty .
 
 crm:P50_has_current_keeper a owl:ObjectProperty .
-
-time:hasBeginning a owl:ObjectProperty .
-
-time:hasEnd a owl:ObjectProperty .
 
 gbo:editor a owl:ObjectProperty .
 
