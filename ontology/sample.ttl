@@ -104,12 +104,12 @@ gbo:isIncludedInVolume a owl:ObjectProperty .
 
 gbo:isPartOfSection a owl:DatatypeProperty .
 
-<https://github.com/mod-bib/biblio-gad/ontology/author/author_ceg> a schema1:Person ;
-    schema1:birthDate "1401-01-01"^^xsd:date ;
+<https://github.com/mod-bib/biblio-gad/ontology/person/person_ceg> a schema1:Person ;
+    schema1:birthDate "1893-11-14"^^xsd:date ;
     schema1:birthPlace <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
     schema1:deathDate "1973-05-21"^^xsd:date ;
     schema1:deathPlace <https://github.com/mod-bib/biblio-gad/ontology/place/place_roma> ;
-    gbo:hasIdentifier "author_ceg"^^xsd:string ;
+    gbo:hasIdentifier "person_ceg"^^xsd:string ;
     gbo:hasName "Carlo Emilio Gadda"^^xsd:string ;
     gbo:hasPseudonym "Alì Oco de Madrigal; Alis Oco de Madrigal; Aligi di Ca da l'Ormo"^^xsd:string .
 
@@ -232,8 +232,8 @@ gbo:isPartOfSection a owl:DatatypeProperty .
     lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf> ;
     lrmoo:R71i_is_part_of <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1988> ;
     rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
-    schema1:contributor "Guido Lucchini"^^xsd:string ;
-    gbo:editor <https://github.com/mod-bib/biblio-gad/ontology/283-564/283-564> ;
+    schema1:pagination "283-564"^^xsd:string ;
+    gbo:editor <https://github.com/mod-bib/biblio-gad/ontology/person/person_lucchini> ;
     gbo:hasIdentifier "publication_l'a_1988"^^xsd:string ;
     gbo:hasPublicationType "Libri e raccolte d'autore"^^xsd:string ;
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string .
@@ -244,7 +244,7 @@ gbo:isPartOfSection a owl:DatatypeProperty .
     rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
     rdam:P30106_has_series_statement "Biblioteca Adelphi; 592"^^xsd:string ;
     rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
-    schema1:contributor "Claudio Vela"^^xsd:string ;
+    gbo:editor <https://github.com/mod-bib/biblio-gad/ontology/person/person_vela> ;
     gbo:hasIdentifier "publication_l'a_2012"^^xsd:string ;
     gbo:hasPublicationType "Libri e raccolte d'autore"^^xsd:string ;
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
@@ -333,4 +333,12 @@ gbo:isPartOfSection a owl:DatatypeProperty .
     gbo:hasIdentifier "item_l'a_1945_btm"^^xsd:string ;
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
     gbo:isAnnotated false .
+
+<https://github.com/mod-bib/biblio-gad/ontology/person/person_lucchini> a schema1:Person ;
+    gbo:hasIdentifier "person_lucchini"^^xsd:string ;
+    gbo:hasName "Guido Lucchini"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/person/person_vela> a schema1:Person ;
+    gbo:hasIdentifier "person_vela"^^xsd:string ;
+    gbo:hasName "Claudio Vela"^^xsd:string .
 
