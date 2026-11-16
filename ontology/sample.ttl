@@ -1,0 +1,338 @@
+@prefix bibo: <http://purl.org/ontology/bibo/1.3/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix gbo: <https://github.com/mod-bib/biblio-gad/ontology/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdai: <http://rdaregistry.info/Elements/i/> .
+@prefix rdam: <http://rdaregistry.info/Elements/m/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix rdaw: <http://rdaregistry.info/Elements/w/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lrmoo:R2_is_derivative_of a owl:ObjectProperty .
+
+lrmoo:R3i_realises a owl:ObjectProperty .
+
+lrmoo:R4_is_embodied_in a owl:ObjectProperty .
+
+lrmoo:R4i_embodies a owl:ObjectProperty .
+
+lrmoo:R5i_is_component_of a owl:ObjectProperty .
+
+lrmoo:R71i_is_part_of a owl:ObjectProperty .
+
+lrmoo:R7_exemplifies a owl:ObjectProperty .
+
+lrmoo:R7i_is_exemplified_by a owl:ObjectProperty .
+
+rdai:P40069_has_related_work_of_item a owl:ObjectProperty .
+
+rdam:P30011__has_date_of_publication a owl:DatatypeProperty .
+
+rdam:P30011_has_date_of_publication a owl:DatatypeProperty .
+
+rdam:P30088_has_place_of_publication a owl:ObjectProperty .
+
+rdam:P30106_has_series_statement a owl:DatatypeProperty .
+
+rdam:P30135_has_work_manifested a owl:ObjectProperty .
+
+rdau:P60306_is_continued_by a owl:ObjectProperty .
+
+rdaw:P10072_has_manifestation_of_work a owl:ObjectProperty .
+
+rdaw:P10310_has_related_item_of_work a owl:ObjectProperty .
+
+schema1:author a owl:ObjectProperty .
+
+schema1:birthDate a owl:DatatypeProperty .
+
+schema1:birthPlace a owl:ObjectProperty .
+
+schema1:deathDate a owl:DatatypeProperty .
+
+schema1:deathPlace a owl:ObjectProperty .
+
+schema1:genre a owl:DatatypeProperty .
+
+schema1:pagination a owl:DatatypeProperty .
+
+crm:P50_has_current_keeper a owl:ObjectProperty .
+
+time:hasBeginning a owl:ObjectProperty .
+
+time:hasEnd a owl:ObjectProperty .
+
+gbo:editor a owl:ObjectProperty .
+
+gbo:hasCompositionDateFrom a owl:DatatypeProperty .
+
+gbo:hasCompositionDateTo a owl:DatatypeProperty .
+
+gbo:hasIdentifier a owl:DatatypeProperty .
+
+gbo:carries a owl:ObjectProperty .
+
+gbo:hasName a owl:DatatypeProperty .
+
+gbo:hasNote a owl:DatatypeProperty .
+
+gbo:hasPeriodical a owl:ObjectProperty .
+
+gbo:hasPeriodicalIssue a owl:ObjectProperty .
+
+gbo:hasPosition a owl:DatatypeProperty .
+
+gbo:hasPseudonym a owl:DatatypeProperty .
+
+gbo:hasPublicationType a owl:DatatypeProperty .
+
+gbo:hasSourceWork a owl:ObjectProperty .
+
+gbo:hasTitle a owl:DatatypeProperty .
+
+gbo:hasVenueDetails a owl:DatatypeProperty .
+
+gbo:isAnnotated a owl:DatatypeProperty .
+
+gbo:isCarriedBy a owl:ObjectProperty .
+
+gbo:isIncludedInPeriodicalIssue a owl:ObjectProperty .
+
+gbo:isIncludedInVolume a owl:ObjectProperty .
+
+gbo:isPartOfSection a owl:DatatypeProperty .
+
+<https://github.com/mod-bib/biblio-gad/ontology/author/author_ceg> a schema1:Person ;
+    schema1:birthDate "1401-01-01"^^xsd:date ;
+    schema1:birthPlace <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
+    schema1:deathDate "1973-05-21"^^xsd:date ;
+    schema1:deathPlace <https://github.com/mod-bib/biblio-gad/ontology/place/place_roma> ;
+    gbo:hasIdentifier "author_ceg"^^xsd:string ;
+    gbo:hasName "Carlo Emilio Gadda"^^xsd:string ;
+    gbo:hasPseudonym "Alì Oco de Madrigal; Alis Oco de Madrigal; Aligi di Ca da l'Ormo"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1988> a gbo:ComponentPublication ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
+    schema1:pagination "481-507"^^xsd:string ;
+    gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf> ;
+    gbo:hasIdentifier "componentpublication_al_parco_in_una_sera_di_maggio_1988"^^xsd:string ;
+    gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
+    gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
+    gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988> .
+
+<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_2012> a gbo:ComponentPublication ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
+    schema1:pagination "231-262"^^xsd:string ;
+    gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps> ;
+    gbo:hasIdentifier "componentpublication_al_parco_in_una_sera_di_maggio_2012"^^xsd:string ;
+    gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
+    gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
+    gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012> .
+
+<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1944> a gbo:ComponentPublication ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
+    schema1:pagination "297-340"^^xsd:string ;
+    gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps> ;
+    gbo:hasIdentifier "componentpublication_al_parco_in_una_sera_di_maggio_1944"^^xsd:string ;
+    gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
+    gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
+    gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944> .
+
+<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1945> a gbo:ComponentPublication ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
+    gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_seconda_edizione> ;
+    gbo:hasIdentifier "componentpublication_al_parco_in_una_sera_di_maggio_1945"^^xsd:string ;
+    gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
+    gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
+    gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945> .
+
+<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1955> a gbo:ComponentPublication ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
+    gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf> ;
+    gbo:hasIdentifier "componentpublication_al_parco_in_una_sera_di_maggio_1955"^^xsd:string ;
+    gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
+    gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
+    gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955> .
+
+<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_la_benignità_1943> a gbo:ComponentPublication ;
+    rdam:P30011_has_date_of_publication "1943-07-15"^^xsd:date ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
+    schema1:pagination "253"^^xsd:string ;
+    gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico> ;
+    gbo:hasIdentifier "componentpublication_la_benignità_1943"^^xsd:string ;
+    gbo:hasPublicationType "Prosa/racconto in rivista"^^xsd:string ;
+    gbo:hasTitle "La benignità"^^xsd:string ;
+    gbo:isIncludedInPeriodicalIssue "periodicalissue_primato_A4_N14"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_seconda_edizione> a lrmoo:F2_Expression ;
+    lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1945> ;
+    lrmoo:R5i_is_component_of <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione> ;
+    gbo:hasIdentifier "expression_al_parco_in_una_sera_di_maggio_seconda_edizione"^^xsd:string ;
+    gbo:hasNote "Testo della seconda edizione de L'Adalgisa (Le Monnier 1945)"^^xsd:string ;
+    gbo:hasPosition "6.0"^^xsd:string ;
+    gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps> a lrmoo:F2_Expression ;
+    lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1944>,
+        <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_2012> ;
+    lrmoo:R5i_is_component_of <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps> ;
+    gbo:hasIdentifier "expression_al_parco_in_una_sera_di_maggio_princeps"^^xsd:string ;
+    gbo:hasNote "Testo della prima edizione de L'Adalgisa (Le Monnier 1944)"^^xsd:string ;
+    gbo:hasPosition "9.0"^^xsd:string ;
+    gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf> a lrmoo:F2_Expression ;
+    lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1955>,
+        <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_1988> ;
+    lrmoo:R5i_is_component_of <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf> ;
+    gbo:hasIdentifier "expression_al_parco_in_una_sera_di_maggio_sf"^^xsd:string ;
+    gbo:hasNote "Testo de L'Adalgisa (Einaudi 1955, parte della silloge I sogni la folgore)"^^xsd:string ;
+    gbo:hasPosition "9.0"^^xsd:string ;
+    gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico> a lrmoo:F2_Expression ;
+    lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_la_benignità_1943> ;
+    gbo:hasIdentifier "expression_la_benignità_periodico"^^xsd:string ;
+    gbo:hasNote "Testo dell'edizione pubblicata su «Primato»"^^xsd:string ;
+    gbo:hasTitle "La benignità"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> a lrmoo:F1_Work ;
+    schema1:genre "Racconto"^^xsd:string ;
+    gbo:hasIdentifier "work_al_parco_in_una_sera_di_maggio"^^xsd:string ;
+    gbo:hasSourceWork <https://github.com/mod-bib/biblio-gad/ontology/work/work_fulmine> ;
+    gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945> a gbo:Publication ;
+    lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione> ;
+    rdam:P30011_has_date_of_publication "1945"^^xsd:gYear ;
+    rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze> ;
+    rdam:P30106_has_series_statement "Quaderni di letteratura e d'arte; 8-9"^^xsd:string ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    gbo:hasIdentifier "publication_l'a_1945"^^xsd:string ;
+    gbo:hasNote "Edizione di 1200 esemplari numerati"^^xsd:string ;
+    gbo:hasPublicationType "Libri e raccolte d'autore"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
+    gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier> .
+
+<https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955> a gbo:Publication ;
+    lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf> ;
+    lrmoo:R71i_is_part_of <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1955> ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    gbo:hasIdentifier "publication_l'a_1955"^^xsd:string ;
+    gbo:hasPublicationType "Libri e raccolte d'autore"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988> a gbo:Publication ;
+    lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf> ;
+    lrmoo:R71i_is_part_of <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1988> ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    schema1:contributor "Guido Lucchini"^^xsd:string ;
+    gbo:editor <https://github.com/mod-bib/biblio-gad/ontology/283-564/283-564> ;
+    gbo:hasIdentifier "publication_l'a_1988"^^xsd:string ;
+    gbo:hasPublicationType "Libri e raccolte d'autore"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012> a gbo:Publication ;
+    lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps> ;
+    rdam:P30011_has_date_of_publication "2012"^^xsd:gYear ;
+    rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
+    rdam:P30106_has_series_statement "Biblioteca Adelphi; 592"^^xsd:string ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    schema1:contributor "Claudio Vela"^^xsd:string ;
+    gbo:hasIdentifier "publication_l'a_2012"^^xsd:string ;
+    gbo:hasPublicationType "Libri e raccolte d'autore"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
+    gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_adelphi> .
+
+<https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944> a gbo:Publication ;
+    lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps> ;
+    rdam:P30011_has_date_of_publication "1944"^^xsd:gYear ;
+    rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze> ;
+    rdam:P30106_has_series_statement "Quaderni di letteratura e d'arte; 8-9"^^xsd:string ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    gbo:hasIdentifier "publication_l'a_1944"^^xsd:string ;
+    gbo:hasNote "Edizione di 1000 esemplari numerati"^^xsd:string ;
+    gbo:hasPublicationType "Libri e raccolte d'autore"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
+    gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier> .
+
+<https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps> a lrmoo:F2_Expression ;
+    lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/pub/pub_2012>,
+        <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_1944> ;
+    gbo:hasCompositionDateFrom "post 09/1941"^^xsd:string ;
+    gbo:hasCompositionDateTo "ante 22/12/1943"^^xsd:string ;
+    gbo:hasIdentifier "expression_l'a_princeps"^^xsd:string ;
+    gbo:hasNote "Testo della prima edizione (Le Monnier 1944)"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf> a lrmoo:F2_Expression ;
+    lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/pub/pub_1988>,
+        <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_1955> ;
+    gbo:hasCompositionDateFrom "post 12/1952"^^xsd:string ;
+    gbo:hasCompositionDateTo "ante 12/1955"^^xsd:string ;
+    gbo:hasIdentifier "expression_l'a_sf"^^xsd:string ;
+    gbo:hasNote "Testo dell'edizione (Einaudi 1955). Vengono reintrodotti i racconti espunti nell'edizione Le Monnier 1945"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/work/work_la> a lrmoo:F1_Work ;
+    schema1:genre "Narrativa"^^xsd:string ;
+    gbo:hasIdentifier "work_l'a"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato> a bibo:Periodical ;
+    rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_roma> ;
+    gbo:hasIdentifier "periodical_primato"^^xsd:string ;
+    gbo:hasPeriodicalIssue <https://github.com/mod-bib/biblio-gad/ontology/issue/issue_primato_A3_N18>,
+        <https://github.com/mod-bib/biblio-gad/ontology/issue/issue_primato_A3_N19>,
+        <https://github.com/mod-bib/biblio-gad/ontology/issue/issue_primato_A3_N6>,
+        <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N12> ;
+    gbo:hasTitle "Primato - Lettere e Arti d'Italia"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A4_N14> a gbo:PeriodicalIssue ;
+    rdfs:label "Primato (15/07/1943)"^^xsd:string ;
+    gbo:hasIdentifier "periodicalissue_primato_A4_N14"^^xsd:string ;
+    gbo:hasPeriodical <https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato> ;
+    gbo:hasVenueDetails "a. IV, n. 14"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1944_bal> a lrmoo:F5_Item ;
+    lrmoo:R7_exemplifies <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944> ;
+    rdai:P40069_has_related_work_of_item <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    crm:P50_has_current_keeper <https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal> ;
+    gbo:hasIdentifier "item_l'a_1944_bal"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
+    gbo:isAnnotated true .
+
+<https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1944_btm> a lrmoo:F5_Item ;
+    lrmoo:R7_exemplifies <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944> ;
+    rdai:P40069_has_related_work_of_item <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    crm:P50_has_current_keeper <https://github.com/mod-bib/biblio-gad/ontology/actor/actor_btm> ;
+    gbo:hasIdentifier "item_l'a_1944_btm"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
+    gbo:isAnnotated true .
+
+<https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1945_bal> a lrmoo:F5_Item ;
+    lrmoo:R7_exemplifies <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945> ;
+    rdai:P40069_has_related_work_of_item <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    crm:P50_has_current_keeper <https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal> ;
+    gbo:hasIdentifier "item_l'a_1945_bal"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
+    gbo:isAnnotated true .
+
+<https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1945_btm> a lrmoo:F5_Item ;
+    lrmoo:R7_exemplifies <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945> ;
+    rdai:P40069_has_related_work_of_item <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
+    crm:P50_has_current_keeper <https://github.com/mod-bib/biblio-gad/ontology/actor/actor_btm> ;
+    gbo:hasIdentifier "item_l'a_1945_btm"^^xsd:string ;
+    gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
+    gbo:isAnnotated false .
+
