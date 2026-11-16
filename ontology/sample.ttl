@@ -362,3 +362,10 @@ gbo:isPartOfSection a owl:DatatypeProperty .
     rdfs:label "Milano"^^xsd:string ;
     gbo:hasIdentifier "place_milano"^^xsd:string .
 
+<https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_adelphi> a gbo:PublishingHouse ;
+    rdfs:label "Adelphi"^^xsd:string ;
+    gbo:hasIdentifier "publishinghouse_adelphi"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier> a gbo:PublishingHouse ;
+    rdfs:label "Le Monnier"^^xsd:string ;
+    gbo:hasIdentifier "publishinghouse_le_monnier"^^xsd:string .
