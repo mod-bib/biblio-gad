@@ -10,7 +10,6 @@
 @prefix rdau: <http://rdaregistry.info/Elements/u/> .
 @prefix rdaw: <http://rdaregistry.info/Elements/w/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix time: <http://www.w3.org/2006/time#> .
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
 @prefix schema1: <http://schema.org/> .
 @base <http://www.w3.org/2002/07/owl#> .
@@ -64,6 +63,7 @@ lrmoo:R3i_realises rdf:type owl:ObjectProperty ;
 
 ###  http://iflastandards.info/ns/lrm/lrmoo/R4_is_embodied_in
 lrmoo:R4_is_embodied_in rdf:type owl:ObjectProperty ;
+                        owl:inverseOf lrmoo:R4i_embodies ;
                         rdfs:domain lrmoo:F2_Expression ;
                         rdfs:range lrmoo:F3_Manifestation .
 
@@ -88,6 +88,7 @@ lrmoo:R71i_is_part_of rdf:type owl:ObjectProperty ;
 
 ###  http://iflastandards.info/ns/lrm/lrmoo/R7_exemplifies
 lrmoo:R7_exemplifies rdf:type owl:ObjectProperty ;
+                     owl:inverseOf lrmoo:R7i_is_exemplified_by ;
                      rdfs:domain lrmoo:F5_Item ;
                      rdfs:range lrmoo:F3_Manifestation .
 
@@ -156,14 +157,6 @@ schema1:deathPlace rdf:type owl:ObjectProperty ;
 crm:P50_has_current_keeper rdf:type owl:ObjectProperty ;
                            rdfs:domain lrmoo:F5_Item ;
                            rdfs:range crm:E39_Actor .
-
-
-###  http://www.w3.org/2006/time#hasBeginning
-time:hasBeginning rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3.org/2006/time#hasEnd
-time:hasEnd rdf:type owl:ObjectProperty .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/carries
@@ -284,14 +277,11 @@ gbo:hasCompositionDateTo rdf:type owl:DatatypeProperty ;
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasIdentifier
-gbo:hasIdentifier rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:string .
+gbo:hasIdentifier rdf:type owl:DatatypeProperty .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasName
-gbo:hasName rdf:type owl:DatatypeProperty ;
-            rdfs:domain schema1:Person ;
-            rdfs:range xsd:string .
+gbo:hasName rdf:type owl:DatatypeProperty .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasNote
@@ -386,6 +376,10 @@ gbo:PeriodicalIssue rdf:type owl:Class .
 ###  https://github.com/mod-bib/biblio-gad/ontology/Publication
 gbo:Publication rdf:type owl:Class ;
                 rdfs:subClassOf lrmoo:F3_Manifestation .
+
+
+###  https://github.com/mod-bib/biblio-gad/ontology/PublishingHouse
+gbo:PublishingHouse rdf:type owl:Class .
 
 
 #################################################################
@@ -782,6 +776,20 @@ gbo:Publication rdf:type owl:Class ;
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1988
 <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1988> rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_adelphi
+<https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_adelphi> rdf:type owl:NamedIndividual ,
+                                                                                                  gbo:PublishingHouse ;
+                                                                                         gbo:hasIdentifier "publishinghouse_adelphi" ;
+                                                                                         rdfs:label "Adelphi" .
+
+
+###  https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier
+<https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier> rdf:type owl:NamedIndividual ,
+                                                                                                     gbo:PublishingHouse ;
+                                                                                            gbo:hasIdentifier "publishinghouse_le_monnier" ;
+                                                                                            rdfs:label "Le Monnier" .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio
