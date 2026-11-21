@@ -1,3 +1,4 @@
+@prefix : <https://raw.githubusercontent.com/mod-bib/biblio-gad/refs/heads/main/ontology/sample.ttl#> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix gbo: <https://github.com/mod-bib/biblio-gad/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -12,10 +13,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
 @prefix schema1: <http://schema.org/> .
-@base <http://www.w3.org/2002/07/owl#> .
+@base <https://raw.githubusercontent.com/mod-bib/biblio-gad/refs/heads/main/ontology/sample.ttl> .
 
-[ rdf:type owl:Ontology
- ] .
+<https://raw.githubusercontent.com/mod-bib/biblio-gad/refs/heads/main/ontology/sample.ttl> rdf:type owl:Ontology .
 
 #################################################################
 #    Datatypes
