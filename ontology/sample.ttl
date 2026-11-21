@@ -91,7 +91,7 @@ gbo:publisher a owl:ObjectProperty .
 
 gbo:hasTitle a owl:DatatypeProperty .
 
-gbo:hasVenueDetails a owl:DatatypeProperty .
+gbo:hasIssueDetails a owl:DatatypeProperty .
 
 gbo:isAnnotated a owl:DatatypeProperty .
 
@@ -102,6 +102,10 @@ gbo:isIncludedInPeriodicalIssue a owl:ObjectProperty .
 gbo:isIncludedInVolume a owl:ObjectProperty .
 
 gbo:isPartOfSection a owl:DatatypeProperty .
+
+gbo:isRepresentedBy a owl:ObjectProperty .
+
+gbo:represents a owl:ObjectProperty .
 
 <https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal> a crm:E39_Actor ;
     rdfs:label "Biblioteca Archivio Liberati"^^xsd:string ;
@@ -386,3 +390,43 @@ gbo:isPartOfSection a owl:DatatypeProperty .
 <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier> a gbo:PublishingHouse ;
     rdfs:label "Le Monnier"^^xsd:string ;
     gbo:hasIdentifier "publishinghouse_le_monnier"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_centrale_di_cornigliano> a lrmoo:F2_Expression ;
+    lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano> ;
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/pc/pc_la_centrale_di_cornigliano_1986>,
+        <https://github.com/mod-bib/biblio-gad/ontology/pc/pc_la_centrale_di_cornigliano_1993>,
+        <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953> ;
+    gbo:hasIdentifier "expression_la_centrale_di_cornigliano"^^xsd:string ;
+    gbo:hasNote "Testo della prima pubblicazione, su «Civiltà delle macchine»"^^xsd:string ;
+    gbo:hasTitle "La centrale di Cornigliano"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano> a lrmoo:F1_Work ;
+    lrmoo:R3_is_realised_by <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_centrale_di_cornigliano> ;
+    rdaw:P10072_has_manifestation_of_work <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953> ;
+    schema1:genre "Saggio"^^xsd:string ;
+    gbo:hasIdentifier "work_la_centrale_di_cornigliano"^^xsd:string ;
+    gbo:hasTitle "La centrale di Cornigliano"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953> a gbo:PublicationComponent ;
+    rdam:P30011_has_date_of_publication "1953-01"^^xsd:gYearMonth ;
+    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano> ;
+    schema1:pagination "54-56"^^xsd:string ;
+    gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_centrale_di_cornigliano> ;
+    gbo:hasIdentifier "publicationcomponent_la_centrale_di_cornigliano_1953"^^xsd:string ;
+    gbo:hasPublicationType "Testo in rivista"^^xsd:string ;
+    gbo:hasTitle "La centrale di Cornigliano"^^xsd:string ;
+    gbo:isIncludedInPeriodicalIssue <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N5> .
+
+<https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_civiltà_delle_macchine> a bibo:Periodical ;
+    rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
+    gbo:hasIdentifier "periodical_civiltà_delle_macchine"^^xsd:string ;
+    gbo:hasPeriodicalIssue <https://github.com/mod-bib/biblio-gad/ontology/issue/issue_civiltà_delle_macchine_A1_N5>,
+        <https://github.com/mod-bib/biblio-gad/ontology/issue/issue_civiltà_delle_macchine_A3_N6>,
+        <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N2> ;
+    gbo:hasTitle "Civiltà delle macchine"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N5> a gbo:PeriodicalIssue ;
+    rdfs:label "Civiltà delle macchine (settembre 1953)"^^xsd:string ;
+    gbo:hasIdentifier "periodicalissue_civiltà_delle_macchine_A1_N5"^^xsd:string ;
+    gbo:hasIssueDetails "a. I, n. 5 (settembre 1953)"^^xsd:string ;
+    gbo:hasPeriodical <https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_civiltà_delle_macchine> .
