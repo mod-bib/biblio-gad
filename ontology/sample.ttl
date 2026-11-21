@@ -329,7 +329,7 @@ gbo:represents a owl:ObjectProperty .
     rdfs:label "Primato (15/07/1943)"^^xsd:string ;
     gbo:hasIdentifier "periodicalissue_primato_A4_N14"^^xsd:string ;
     gbo:hasPeriodical <https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato> ;
-    gbo:hasVenueDetails "a. IV, n. 14"^^xsd:string .
+    gbo:hasIssueDetails "a. IV, n. 14"^^xsd:string .
 
 <https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1944_bal> a lrmoo:F5_Item ;
     lrmoo:R7_exemplifies <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944> ;
