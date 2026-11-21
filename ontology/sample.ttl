@@ -61,7 +61,7 @@ schema1:pagination a owl:DatatypeProperty .
 
 crm:P50_has_current_keeper a owl:ObjectProperty .
 
-gbo:editor a owl:ObjectProperty .
+schema:contributor a owl:ObjectProperty .
 
 gbo:hasCompositionDateFrom a owl:DatatypeProperty .
 
@@ -254,7 +254,7 @@ gbo:represents a owl:ObjectProperty .
     lrmoo:R71i_is_part_of <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1988> ;
     rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
     schema1:pagination "283-564"^^xsd:string ;
-    gbo:editor <https://github.com/mod-bib/biblio-gad/ontology/person/person_lucchini> ;
+    schema:contributor <https://github.com/mod-bib/biblio-gad/ontology/person/person_lucchini> ;
     gbo:hasIdentifier "publication_l'a_1988"^^xsd:string ;
     gbo:hasPublicationType "Libri e raccolte d'autore"^^xsd:string ;
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string .
@@ -265,7 +265,7 @@ gbo:represents a owl:ObjectProperty .
     rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
     rdam:P30106_has_series_statement "Biblioteca Adelphi; 592"^^xsd:string ;
     rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
-    gbo:editor <https://github.com/mod-bib/biblio-gad/ontology/person/person_vela> ;
+    schema:contributor <https://github.com/mod-bib/biblio-gad/ontology/person/person_vela> ;
     gbo:hasIdentifier "publication_l'a_2012"^^xsd:string ;
     gbo:hasPublicationType "Libri e raccolte d'autore"^^xsd:string ;
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
