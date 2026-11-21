@@ -283,7 +283,8 @@ rdam:P30011_has_date_of_publication rdf:type owl:DatatypeProperty ;
 
 ###  http://rdaregistry.info/Elements/m/P30106_has_series_statement
 rdam:P30106_has_series_statement rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain gbo:Publication .
+                                 rdfs:domain gbo:Publication ;
+                                 rdfs:comment "Indica la collana editoriale."@it .
 
 
 ###  http://schema.org/birthDate
@@ -313,13 +314,15 @@ schema1:pagination rdf:type owl:DatatypeProperty ;
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasCompositionDateFrom
 gbo:hasCompositionDateFrom rdf:type owl:DatatypeProperty ;
                            rdfs:domain lrmoo:F2_Expression ;
-                           rdfs:range rdfs:Literal .
+                           rdfs:range rdfs:Literal ;
+                           rdfs:comment "Rappresenta l'inizio di un arco temporale relativo alla composizione di un testo. Sulla base delle informazioni disponibili, può essere espresso secondo criteri e livelli di granularità diversi."@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasCompositionDateTo
 gbo:hasCompositionDateTo rdf:type owl:DatatypeProperty ;
                          rdfs:domain lrmoo:F2_Expression ;
-                         rdfs:range rdfs:Literal .
+                         rdfs:range rdfs:Literal ;
+                         rdfs:comment "Rappresenta la fine di un arco temporale relativo alla composizione di un testo. Sulla base delle informazioni disponibili, può essere espresso secondo criteri e livelli di granularità diversi."@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasIdentifier
@@ -342,7 +345,8 @@ gbo:hasNote rdf:type owl:DatatypeProperty .
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasPosition
 gbo:hasPosition rdf:type owl:DatatypeProperty ;
-                rdfs:domain lrmoo:F2_Expression .
+                rdfs:domain lrmoo:F2_Expression ;
+                rdfs:comment "Indica la posizione di un testo all'interno di una raccolta."@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasPseudonym
@@ -355,7 +359,8 @@ gbo:hasPublicationType rdf:type owl:DatatypeProperty ;
                                      owl:unionOf ( gbo:Publication
                                                    gbo:PublicationComponent
                                                  )
-                                   ] .
+                                   ] ;
+                       rdfs:comment "Indica la tipologia di pubblicazione."@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasTitle
@@ -365,13 +370,15 @@ gbo:hasTitle rdf:type owl:DatatypeProperty .
 ###  https://github.com/mod-bib/biblio-gad/ontology/isAnnotated
 gbo:isAnnotated rdf:type owl:DatatypeProperty ;
                 rdfs:domain lrmoo:F5_Item ;
-                rdfs:range xsd:boolean .
+                rdfs:range xsd:boolean ;
+                rdfs:comment "Indica la presenza di annotazioni su una copia nella biblioteca dell'autore."@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/isPartOfSection
 gbo:isPartOfSection rdf:type owl:DatatypeProperty ;
                     rdfs:domain gbo:PublicationComponent ;
-                    rdfs:range xsd:string .
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Indica la sezione in cui un testo è contenuto all'interno di una raccolta (e.g. \"Parte prima\", \"Polemiche e pace nel direttissimo\")."@it .
 
 
 #################################################################
