@@ -456,18 +456,18 @@ gbo:represents a owl:ObjectProperty .
 <https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_civiltà_delle_macchine> a bibo:Periodical ;
     rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
     gbo:hasIdentifier "periodical_civiltà_delle_macchine"^^xsd:string ;
-    gbo:hasPeriodicalIssue <https://github.com/mod-bib/biblio-gad/ontology/issue/issue_civiltà_delle_macchine_A1_N5>,
-        <https://github.com/mod-bib/biblio-gad/ontology/issue/issue_civiltà_delle_macchine_A3_N6>,
-        <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N2> ;
+    gbo:hasPeriodicalIssue <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N2>,
+        <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N5>,
+        <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A3_N6> ;
     gbo:hasTitle "Civiltà delle macchine"^^xsd:string .
 
 <https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato> a bibo:Periodical ;
     rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_roma> ;
     gbo:hasIdentifier "periodical_primato"^^xsd:string ;
-    gbo:hasPeriodicalIssue <https://github.com/mod-bib/biblio-gad/ontology/issue/issue_primato_A3_N18>,
-        <https://github.com/mod-bib/biblio-gad/ontology/issue/issue_primato_A3_N19>,
-        <https://github.com/mod-bib/biblio-gad/ontology/issue/issue_primato_A3_N6>,
-        <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N12> ;
+    gbo:hasPeriodicalIssue <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N12>,
+        <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N18>,
+        <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N19>,
+        <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N6> ;
     gbo:hasTitle "Primato - Lettere e Arti d'Italia"^^xsd:string .
 
 # periodical issues
@@ -481,5 +481,5 @@ gbo:represents a owl:ObjectProperty .
 <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A4_N14> a gbo:PeriodicalIssue ;
     rdfs:label "Primato (15/07/1943)"^^xsd:string ;
     gbo:hasIdentifier "periodicalissue_primato_A4_N14"^^xsd:string ;
-    gbo:hasPeriodical <https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato> ;
-    gbo:hasIssueDetails "a. IV, n. 14"^^xsd:string .
+    gbo:hasIssueDetails "a. IV, n. 14"^^xsd:string ;
+    gbo:hasPeriodical <https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato> .
