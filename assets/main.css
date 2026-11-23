@@ -166,11 +166,16 @@ nav a:hover {
     background-color: #ffffff;
 }
 /*----Case studies page----*/
+#main-case-studies {
+    padding: 0;
+}
+
 #case-studies-title {
     font-size: 3.5em;
     color: darkslategray;
     font-weight: bold;
 }
+
 #case-1-sec-title, #case-2-sec-title {
     height: 16em;
     display: grid;
