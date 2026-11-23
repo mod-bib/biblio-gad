@@ -17,13 +17,6 @@
 [ rdf:type owl:Ontology
  ] .
 
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://rdaregistry.info/Elements/u/60306_is_continued_by
-<http://rdaregistry.info/Elements/u/60306_is_continued_by> rdf:type owl:AnnotationProperty .
-
 
 #################################################################
 #    Datatypes
@@ -718,24 +711,6 @@ gbo:PublishingHouse rdf:type owl:Class .
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/place/place_torino
 <https://github.com/mod-bib/biblio-gad/ontology/place/place_torino> rdf:type owl:NamedIndividual .
-
-
-###  https://github.com/mod-bib/biblio-gad/ontology/publication/publication_RR1
-<https://github.com/mod-bib/biblio-gad/ontology/publication/publication_RR1> rdf:type owl:NamedIndividual ,
-                                                                                      gbo:Publication ;
-                                                                             lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_cdd_manzotti> ,
-                                                                                                <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_cdu_sf> ,
-                                                                                                <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf> ,
-                                                                                                <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_mdf_sf> ;
-                                                                             rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
-                                                                             rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
-                                                                             gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_garzanti> ;
-                                                                             rdam:P30011_has_date_of_publication "1988"^^xsd:gYear ;
-                                                                             rdam:P30106_has_series_statement "Libri della Spiga" ;
-                                                                             gbo:hasIdentifier "publication_RR1" ;
-                                                                             gbo:hasPublicationType "Libri e raccolte d'autore" ;
-                                                                             gbo:hasTitle "Romanzi e racconti I" ;
-                                                                             <http://rdaregistry.info/Elements/u/60306_is_continued_by> "publication_RR2" .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944

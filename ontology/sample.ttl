@@ -305,21 +305,6 @@ gbo:represents a owl:ObjectProperty .
 
 # publications
 
-<https://github.com/mod-bib/biblio-gad/ontology/publication/publication_RR1> a gbo:Publication ;
-    lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_cdd_manzotti>,
-        <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_cdu_sf>,
-        <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf>,
-        <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_mdf_sf> ;
-    rdam:P30011_has_date_of_publication "1988"^^xsd:gYear ;
-    rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
-    rdam:P30106_has_series_statement "Libri della Spiga"^^xsd:string ;
-    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
-    rdau:60306_is_continued_by "publication_RR2"^^xsd:string ;
-    gbo:hasIdentifier "publication_RR1"^^xsd:string ;
-    gbo:hasPublicationType "Libri e raccolte d'autore"^^xsd:string ;
-    gbo:hasTitle "Romanzi e racconti I"^^xsd:string ;
-    gbo:publisher <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_garzanti> .
-
 <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1955> a gbo:Publication ;
     lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf> ;
     rdam:P30011_has_date_of_publication "1955"^^xsd:gYear ;
