@@ -1,0 +1,3274 @@
+{
+  "@context": {
+    "crm:P50_has_current_keeper": "http://www.cidoc-crm.org/cidoc-crm/P50_has_current_keeper",
+    "gbo:carries": "https://github.com/mod-bib/biblio-gad/ontology/carries",
+    "gbo:hasCompositionDateFrom": "https://github.com/mod-bib/biblio-gad/ontology/hasCompositionDateFrom",
+    "gbo:hasCompositionDateTo": "https://github.com/mod-bib/biblio-gad/ontology/hasCompositionDateTo",
+    "gbo:hasIdentifier": "https://github.com/mod-bib/biblio-gad/ontology/hasIdentifier",
+    "gbo:hasIssueDetails": "https://github.com/mod-bib/biblio-gad/ontology/hasIssueDetails",
+    "gbo:hasName": "https://github.com/mod-bib/biblio-gad/ontology/hasName",
+    "gbo:hasNote": "https://github.com/mod-bib/biblio-gad/ontology/hasNote",
+    "gbo:hasPeriodical": "https://github.com/mod-bib/biblio-gad/ontology/hasPeriodical",
+    "gbo:hasPeriodicalIssue": "https://github.com/mod-bib/biblio-gad/ontology/hasPeriodicalIssue",
+    "gbo:hasPosition": "https://github.com/mod-bib/biblio-gad/ontology/hasPosition",
+    "gbo:hasPseudonym": "https://github.com/mod-bib/biblio-gad/ontology/hasPseudonym",
+    "gbo:hasPublicationType": "https://github.com/mod-bib/biblio-gad/ontology/hasPublicationType",
+    "gbo:hasSourceWork": "https://github.com/mod-bib/biblio-gad/ontology/hasSourceWork",
+    "gbo:hasTitle": "https://github.com/mod-bib/biblio-gad/ontology/hasTitle",
+    "gbo:isAnnotated": "https://github.com/mod-bib/biblio-gad/ontology/isAnnotated",
+    "gbo:isCarriedBy": "https://github.com/mod-bib/biblio-gad/ontology/isCarriedBy",
+    "gbo:isIncludedInPeriodicalIssue": "https://github.com/mod-bib/biblio-gad/ontology/isIncludedInPeriodicalIssue",
+    "gbo:isIncludedInVolume": "https://github.com/mod-bib/biblio-gad/ontology/isIncludedInVolume",
+    "gbo:isPartOfSection": "https://github.com/mod-bib/biblio-gad/ontology/isPartOfSection",
+    "gbo:isRepresentedBy": "https://github.com/mod-bib/biblio-gad/ontology/isRepresentedBy",
+    "gbo:publisher": "https://github.com/mod-bib/biblio-gad/ontology/publisher",
+    "gbo:represents": "https://github.com/mod-bib/biblio-gad/ontology/represents",
+    "lrmoo:R2_is_derivative_of": "http://iflastandards.info/ns/lrm/lrmoo/R2_is_derivative_of",
+    "lrmoo:R3_is_realised_by": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_by",
+    "lrmoo:R3i_realises": "http://iflastandards.info/ns/lrm/lrmoo/R3i_realises",
+    "lrmoo:R4_is_embodied_in": "http://iflastandards.info/ns/lrm/lrmoo/R4_is_embodied_in",
+    "lrmoo:R4i_embodies": "http://iflastandards.info/ns/lrm/lrmoo/R4i_embodies",
+    "lrmoo:R5i_is_component_of": "http://iflastandards.info/ns/lrm/lrmoo/R5i_is_component_of",
+    "lrmoo:R71i_is_part_of": "http://iflastandards.info/ns/lrm/lrmoo/R71i_is_part_of",
+    "lrmoo:R7_exemplifies": "http://iflastandards.info/ns/lrm/lrmoo/R7_exemplifies",
+    "lrmoo:R7i_is_exemplified_by": "http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by",
+    "rdai:P40069_has_related_work_of_item": "http://rdaregistry.info/Elements/i/P40069_has_related_work_of_item",
+    "rdam:P30011_has_date_of_publication": "http://rdaregistry.info/Elements/m/P30011_has_date_of_publication",
+    "rdam:P30088_has_place_of_publication": "http://rdaregistry.info/Elements/m/P30088_has_place_of_publication",
+    "rdam:P30106_has_series_statement": "http://rdaregistry.info/Elements/m/P30106_has_series_statement",
+    "rdam:P30135_has_work_manifested": "http://rdaregistry.info/Elements/m/P30135_has_work_manifested",
+    "rdau:P60306_is_continued_by": "http://rdaregistry.info/Elements/u/P60306_is_continued_by",
+    "rdaw:P10072_has_manifestation_of_work": "http://rdaregistry.info/Elements/w/P10072_has_manifestation_of_work",
+    "rdaw:P10310_has_related_item_of_work": "http://rdaregistry.info/Elements/w/P10310_has_related_item_of_work",
+    "schema:author": "http://schema.org/author",
+    "schema:birthDate": "http://schema.org/birthDate",
+    "schema:birthPlace": "http://schema.org/birthPlace",
+    "schema:contributor": "http://schema.org/contributor",
+    "schema:deathDate": "http://schema.org/deathDate",
+    "schema:deathPlace": "http://schema.org/deathPlace",
+    "schema:genre": "http://schema.org/genre",
+    "schema:pagination": "http://schema.org/pagination"
+  },
+  "@graph": [
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_strane_dicerie_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_strane_dicerie_princeps",
+      "gbo:hasNote": "Testo della prima edizione in volume (L'A Le Monnier 1944)",
+      "gbo:hasPosition": "5.0",
+      "gbo:hasTitle": "Strane dicerie contristano i Bertoloni",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_strane_dicerie_contristano_i_bertoloni"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_2012"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      }
+    },
+    {
+      "@id": "http://schema.org/birthDate",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4i_embodies",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1945",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_seconda_edizione"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_l'adalgisa_1945",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "L'Adalgisa",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_adelphi",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublishingHouse",
+      "gbo:hasIdentifier": "publishinghouse_adelphi",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Adelphi"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_l'adalgisa",
+      "gbo:hasSourceWork": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_fulmine"
+      },
+      "gbo:hasTitle": "L'Adalgisa",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_tesoretto"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_seconda_edizione"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_sf"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_primato"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1941"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1942a"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1942b"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1945"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_2012"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "http://rdaregistry.info/Elements/u/P60306_is_continued_by",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_tesoretto",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_l'adalgisa_tesoretto",
+      "gbo:hasNote": "Testo dell'edizione pubblicata su «Il Tesoretto»",
+      "gbo:hasTitle": "L'Adalgisa (Disegno su tre fogli espunto dal romanzo inedito «Un fulmine sul 220»)",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1941"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1944_btm",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F5_Item",
+      "crm:P50_has_current_keeper": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/actor/actor_btm"
+      },
+      "gbo:hasIdentifier": "item_l'a_1944_btm",
+      "gbo:hasNote": "True",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "gbo:isAnnotated": false,
+      "lrmoo:R7_exemplifies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdai:P40069_has_related_work_of_item": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_i_ritagli_di_tempo_sf",
+      "gbo:hasNote": "Testo de L'Adalgisa (Einaudi 1955, parte della silloge I sogni la folgore)",
+      "gbo:hasPosition": "6.0",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1988"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      }
+    },
+    {
+      "@id": "http://iflastandards.info/ns/lrm/lrmoo/R5i_is_component_of",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_claudio_disimpara_a_vivere_princeps",
+      "gbo:hasNote": "Testo della prima edizione de L'Adalgisa (Le Monnier 1944)",
+      "gbo:hasPosition": "3.0",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_2012"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      }
+    },
+    {
+      "@id": "http://schema.org/contributor",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1945",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_seconda_edizione"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_un_concerto_di_120_professori_1945",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Un «concerto» di 120 professori",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_al_parco_in_una_sera_di_maggio_sf",
+      "gbo:hasNote": "Testo de L'Adalgisa (Einaudi 1955, parte della silloge I sogni la folgore)",
+      "gbo:hasPosition": "9.0",
+      "gbo:hasTitle": "Al Parco, in una sera di maggio",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1988"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_al_parco_in_una_sera_di_maggio_1955",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Al Parco, in una sera di maggio",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_seconda_edizione",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_quattro_figlie_seconda_edizione",
+      "gbo:hasNote": "Testo della seconda edizione de L'Adalgisa (Le Monnier 1945)",
+      "gbo:hasPosition": "3.0",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1945"
+      },
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_periodico",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_claudio_disimpara_a_vivere_periodico",
+      "gbo:hasNote": "Testo dell'edizione pubblicata su «La Nazione»",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1940"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/Publication",
+      "gbo:hasIdentifier": "publication_sf_1955",
+      "gbo:hasPublicationType": "Libri e raccolte d'autore",
+      "gbo:hasTitle": "I sogni e la folgore",
+      "gbo:publisher": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_einaudi"
+      },
+      "lrmoo:R4i_embodies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1955"
+      },
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_torino"
+      },
+      "rdam:P30106_has_series_statement": "Supercoralli",
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/item/item_centrale_1953_bal",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F5_Item",
+      "crm:P50_has_current_keeper": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal"
+      },
+      "gbo:hasIdentifier": "item_centrale_1953_bal",
+      "gbo:hasNote": "False",
+      "gbo:hasTitle": "La centrale di Cornigliano",
+      "gbo:isAnnotated": false,
+      "gbo:represents": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953"
+      },
+      "lrmoo:R7_exemplifies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953"
+      },
+      "rdai:P40069_has_related_work_of_item": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_fulmine",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_fulmine",
+      "gbo:hasTitle": "Un fulmine sul 220",
+      "schema:genre": "Romanzo"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_strane_dicerie_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_strane_dicerie_1955",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Strane dicerie contristano i Bertoloni",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_strane_dicerie_contristano_i_bertoloni"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasPeriodical",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_RR1",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/Publication",
+      "gbo:hasIdentifier": "publication_RR1",
+      "gbo:hasPublicationType": "Libri e raccolte d'autore",
+      "gbo:hasTitle": "Romanzi e racconti I",
+      "gbo:publisher": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_garzanti"
+      },
+      "http://rdaregistry.info/Elements/u/60306_is_continued_by": "publication_RR2",
+      "lrmoo:R4i_embodies": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_cdu_sf"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_mdf_sf"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_cdd_manzotti"
+        }
+      ],
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1988"
+      },
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_milano"
+      },
+      "rdam:P30106_has_series_statement": "Libri della Spiga",
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1945",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_seconda_edizione"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quattro_figlie_1945",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_seconda_edizione",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_l'adalgisa_seconda_edizione",
+      "gbo:hasNote": "Testo della seconda edizione de L'Adalgisa (Le Monnier 1945)",
+      "gbo:hasPosition": "7.0",
+      "gbo:hasTitle": "L'Adalgisa",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1945"
+      },
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_la_benignità_periodico",
+      "gbo:hasNote": "Testo dell'edizione pubblicata su «Primato»",
+      "gbo:hasTitle": "La benignità",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_benignità_1943"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quattro_figlie_1944",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina"
+      },
+      "schema:pagination": "99-138"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_centrale_di_cornigliano"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_la_centrale_di_cornigliano_1953",
+      "gbo:hasPublicationType": "Testo in rivista",
+      "gbo:hasTitle": "La centrale di Cornigliano",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N5"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth",
+        "@value": "1953-01"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano"
+      },
+      "schema:pagination": "54-56"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_quattro_figlie_ebbe_e_ciascuna_regina",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_periodico"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_seconda_edizione"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_sf"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1942"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1945"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_2012"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_navi_approdano_al_parapagal_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_navi_approdano_al_parapagal_sf",
+      "gbo:hasNote": "Testo de L'Adalgisa (Einaudi 1955, parte della silloge I sogni la folgore)",
+      "gbo:hasPosition": "7.0",
+      "gbo:hasTitle": "Navi approdano al Parapagàl",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_navi_approdano_al_parapagal"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_1988"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_un_concerto_di_120_professori_1988",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Un «concerto» di 120 professori",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori"
+      },
+      "schema:pagination": "441-480"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N6",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_primato_A3_N6",
+      "gbo:hasIssueDetails": "a. III, n. 6",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "Primato (15/03/1942)"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_alpignano",
+      "@type": "http://schema.org/Place",
+      "gbo:hasIdentifier": "place_alpignano",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Alpignano"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publisher",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_roma",
+      "@type": "http://schema.org/Place",
+      "gbo:hasIdentifier": "place_roma",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Roma"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_la_ruota_S3_A4_N3",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_la_ruota_S3_A4_N3",
+      "gbo:hasIssueDetails": "serie III, a. IV, n. 3 (marzo 1943)",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_la_ruota"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "La Ruota (marzo 1943)"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1989",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_incompiuti"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_notte_di_luna_1989",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Notte di luna",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_rai_1989"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna_2"
+      },
+      "schema:pagination": "1071-1105"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_al_parco_in_una_sera_di_maggio_princeps",
+      "gbo:hasNote": "Testo della prima edizione de L'Adalgisa (Le Monnier 1944)",
+      "gbo:hasPosition": "9.0",
+      "gbo:hasTitle": "Al Parco, in una sera di maggio",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_2012"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_claudio_disimpara_a_vivere_1955",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere"
+      }
+    },
+    {
+      "@id": "http://www.cidoc-crm.org/cidoc-crm/P50_has_current_keeper",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_garzanti",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublishingHouse",
+      "gbo:hasIdentifier": "publishinghouse_garzanti",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Garzanti"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1961",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_antologia_scrittori_lombardi"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_i_ritagli_di_tempo_1961",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/antologia/antologia_scrittori_lombardi_1961"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "schema:pagination": "129-150"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_tallone",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublishingHouse",
+      "gbo:hasIdentifier": "publishinghouse_tallone",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Stamperia A. Tallone"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasCompositionDateTo",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1945",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_seconda_edizione"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quando_il_girolamo_ha_smesso_1945",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso….",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_l'a",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+        }
+      ],
+      "schema:genre": "Narrativa"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1942_a",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_primato"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_l'adalgisa_1942_a",
+      "gbo:hasPublicationType": "Prosa/racconto su pubblicazione periodica",
+      "gbo:hasTitle": "L'Adalgisa (Racconto di C.E.G.)",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N18"
+      },
+      "http://rdaregistry.info/Elements/u/60306_is_continued_by": "publicationcomponent_l'adalgisa_1942_b",
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1942-09-15"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "schema:pagination": "338-339"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/isRepresentedBy",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/carries",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_notte_di_luna_sf",
+      "gbo:hasNote": "Testo de L'Adalgisa (Einaudi 1955, parte della silloge I sogni la folgore)",
+      "gbo:hasPosition": "1.0",
+      "gbo:hasTitle": "Notte di luna",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1988"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_quando_il_girolamo_ha_smesso_princeps",
+      "gbo:hasNote": "Testo della prima edizione de L'Adalgisa (Le Monnier 1944)",
+      "gbo:hasPosition": "2.0",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso….",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_2012"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_benignità_1943",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_la_benignità_1943",
+      "gbo:hasPublicationType": "Testo in rivista",
+      "gbo:hasTitle": "La benignità",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A4_N14"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1943-07-15"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio"
+      },
+      "schema:pagination": "253"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_un_concerto_di_120_professori_1944",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Un «concerto» di 120 professori",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori"
+      },
+      "schema:pagination": "233-296"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N18",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_primato_A3_N18",
+      "gbo:hasIssueDetails": "a. III, n. 18",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "Primato (15/09/1942)"
+    },
+    {
+      "@id": "http://schema.org/deathDate",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_quattro_figlie_princeps",
+      "gbo:hasNote": "Testo della prima edizione de L'Adalgisa (Le Monnier 1944)",
+      "gbo:hasPosition": "4.0",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_2012"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_navi_approdano_al_parapagal_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_navi_approdano_al_parapagal_princeps",
+      "gbo:hasNote": "Testo de L'Adalgisa (Le Monnier 1944)",
+      "gbo:hasPosition": "7.0",
+      "gbo:hasTitle": "Navi approdano al Parapagàl",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_navi_approdano_al_parapagal"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_2012"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_ns_1971",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/Publication",
+      "gbo:hasIdentifier": "publication_ns_1971",
+      "gbo:hasPublicationType": "Libri e raccolte d'autore",
+      "gbo:hasTitle": "Novella seconda",
+      "gbo:publisher": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_garzanti"
+      },
+      "lrmoo:R4i_embodies": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_dejanira_classis"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_casa"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_incompiuti"
+        }
+      ],
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1971"
+      },
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_milano"
+      },
+      "rdam:P30106_has_series_statement": "Romanzi moderni",
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ns"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal",
+      "@type": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+      "gbo:hasIdentifier": "actor_bal",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Biblioteca Archivio Liberati"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1941",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_tesoretto"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_l'adalgisa_1941",
+      "gbo:hasPublicationType": "Prosa/racconto su pubblicazione periodica",
+      "gbo:hasTitle": "L'Adalgisa (Disegno su tre fogli espunto dal romanzo inedito «Un fulmine sul 220»)",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_tesoretto_1941"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1941"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "schema:pagination": "449-478"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_strane_dicerie_contristano_i_bertoloni",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_strane_dicerie_contristano_i_bertoloni",
+      "gbo:hasSourceWork": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_cdd"
+      },
+      "gbo:hasTitle": "Strane dicerie contristano i Bertoloni",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_strane_dicerie_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_strane_dicerie_sf"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_1945"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_2012"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublishingHouse",
+      "gbo:hasIdentifier": "publishinghouse_le_monnier",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Le Monnier"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasName",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasTitle",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/isIncludedInVolume",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_l'adalgisa_sf",
+      "gbo:hasNote": "Testo de L'Adalgisa (Einaudi 1955, parte della silloge I sogni la folgore)",
+      "gbo:hasPosition": "10.0",
+      "gbo:hasTitle": "L'Adalgisa",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1988"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_civiltà_delle_macchine",
+      "@type": "http://purl.org/ontology/bibo/1.3/Periodical",
+      "gbo:hasIdentifier": "periodical_civiltà_delle_macchine",
+      "gbo:hasPeriodicalIssue": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N2"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N5"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A3_N6"
+        }
+      ],
+      "gbo:hasTitle": "Civiltà delle macchine",
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_milano"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_letteratura_23_A6_N3",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_letteratura_23_A6_N3",
+      "gbo:hasIssueDetails": "23, a. VI, n. 3 (luglio-dicembre 1942)",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_letteratura"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "Letteratura (dicembre 1943)"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_l'adalgisa_1944",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "L'Adalgisa",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "schema:pagination": "341-432"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/isCarriedBy",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_milano",
+      "@type": "http://schema.org/Place",
+      "gbo:hasIdentifier": "place_milano",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Milano"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_centrale_di_cornigliano",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_la_centrale_di_cornigliano",
+      "gbo:hasNote": "Testo della prima pubblicazione, su «Civiltà delle macchine»",
+      "gbo:hasTitle": "La centrale di Cornigliano",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1986"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1993"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/person/person_vela",
+      "@type": "http://schema.org/Person",
+      "gbo:hasIdentifier": "person_vela",
+      "gbo:hasName": "Claudio Vela"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_notte_di_luna_1988",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Notte di luna",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna_1"
+      },
+      "schema:pagination": "289-297"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasCompositionDateFrom": "?",
+      "gbo:hasCompositionDateTo": "ante 21/07/1945",
+      "gbo:hasIdentifier": "expression_l'a_seconda_edizione",
+      "gbo:hasNote": "Testo della seconda edizione (Le Monnier 1945). Espunzione di Notte di luna e dei racconti tratti dalla Cognizione del dolore",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quattro_figlie_2012",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina"
+      },
+      "schema:pagination": "85-112"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1945",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_seconda_edizione"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_i_ritagli_di_tempo_1945",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_i_ritagli_di_tempo_princeps",
+      "gbo:hasNote": "Testo della prima edizione de L'Adalgisa (Le Monnier 1944)",
+      "gbo:hasPosition": "6.0",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_2012"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_einaudi",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublishingHouse",
+      "gbo:hasIdentifier": "publishinghouse_einaudi",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Einaudi"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_notte_di_luna_princeps",
+      "gbo:hasNote": "Testo della prima edizione de L'Adalgisa (Le Monnier 1944)",
+      "gbo:hasPosition": "1.0",
+      "gbo:hasTitle": "Notte di luna",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_2012"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_antologia_scrittori_lombardi_1961",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/Publication",
+      "gbo:hasIdentifier": "publication_antologia_scrittori_lombardi_1961",
+      "gbo:hasPublicationType": "Antologia",
+      "gbo:hasTitle": "Antologia di scrittori lombardi contemporanei",
+      "gbo:publisher": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_tallone"
+      },
+      "lrmoo:R4i_embodies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_antologia_scrittori_lombardi"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1961"
+      },
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_alpignano"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "schema:contributor": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/person/person_carluccio"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/person/person_lucchini",
+      "@type": "http://schema.org/Person",
+      "gbo:hasIdentifier": "person_lucchini",
+      "gbo:hasName": "Guido Lucchini"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasNote",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1942",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_periodico"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_i_ritagli_di_tempo_1942",
+      "gbo:hasPublicationType": "Prosa/racconto su pubblicazione periodica",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N6"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1942-03-15"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "schema:pagination": "121-123"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/person/person_carluccio",
+      "@type": "http://schema.org/Person",
+      "gbo:hasIdentifier": "person_carluccio",
+      "gbo:hasName": "Luigi Carluccio"
+    },
+    {
+      "@id": "http://schema.org/pagination",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_strane_dicerie_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_strane_dicerie_sf",
+      "gbo:hasNote": "Testo della prima edizione in volume (L'A Einaudi 1955)",
+      "gbo:hasPosition": "5.0",
+      "gbo:hasTitle": "Strane dicerie contristano i Bertoloni",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_strane_dicerie_contristano_i_bertoloni"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_1988"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quando_il_girolamo_ha_smesso_1944",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso….",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      },
+      "schema:pagination": "15-84"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_l'adalgisa_1988",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "L'Adalgisa",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "schema:pagination": "509-564"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_claudio_disimpara_a_vivere_2012",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere"
+      },
+      "schema:pagination": "73-84"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_i_ritagli_di_tempo_1944",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "schema:pagination": "183-209"
+    },
+    {
+      "@id": "http://rdaregistry.info/Elements/m/P30088_has_place_of_publication",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/person/person_ceg",
+      "@type": "http://schema.org/Person",
+      "gbo:hasIdentifier": "person_ceg",
+      "gbo:hasName": "Carlo Emilio Gadda",
+      "gbo:hasPseudonym": "Alì Oco de Madrigal;Alis Oco de Madrigal;Aligi di Ca da l'Ormo",
+      "schema:birthDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1401-01-01"
+      },
+      "schema:birthPlace": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_milano"
+      },
+      "schema:deathDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1973-05-21"
+      },
+      "schema:deathPlace": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_roma"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/isAnnotated",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/Publication",
+      "gbo:hasIdentifier": "publication_sf_1988",
+      "gbo:hasPublicationType": "Libri e raccolte d'autore",
+      "gbo:hasTitle": "I sogni e la folgore",
+      "lrmoo:R4i_embodies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      },
+      "lrmoo:R71i_is_part_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_RR1"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_strane_dicerie_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_strane_dicerie_1944",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Strane dicerie contristano i Bertoloni",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_strane_dicerie_contristano_i_bertoloni"
+      },
+      "schema:pagination": "139-182"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_strane_dicerie_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_strane_dicerie_2012",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Strane dicerie contristano i Bertoloni",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_strane_dicerie_contristano_i_bertoloni"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_la_centrale_di_cornigliano",
+      "gbo:hasTitle": "La centrale di Cornigliano",
+      "lrmoo:R3_is_realised_by": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_centrale_di_cornigliano"
+      },
+      "rdaw:P10072_has_manifestation_of_work": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953"
+      },
+      "schema:genre": "Saggio"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N19",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_primato_A3_N19",
+      "gbo:hasIssueDetails": "a. III, n. 19",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "Primato (1/10/1942)"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N5",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_civiltà_delle_macchine_A1_N5",
+      "gbo:hasIssueDetails": "a. I, n. 5 (settembre 1953)",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_civiltà_delle_macchine"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "Civiltà delle macchine (settembre 1953)"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_letteratura_21_A6_N1",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_letteratura_21_A6_N1",
+      "gbo:hasIssueDetails": "21, a. VI, n. 1 (gennaio-marzo 1942)",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_letteratura"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "Letteratura (marzo 1942)"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_torino",
+      "@type": "http://schema.org/Place",
+      "gbo:hasIdentifier": "place_torino",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Torino"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasIdentifier",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasPosition",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1945",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_seconda_edizione"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_al_parco_in_una_sera_di_maggio_1945",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Al Parco, in una sera di maggio",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/represents",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_seconda_edizione",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_un_concerto_di_120_professori_seconda_edizione",
+      "gbo:hasNote": "Testo della seconda edizione de L'Adalgisa (Le Monnier 1945)",
+      "gbo:hasPosition": "5.0",
+      "gbo:hasTitle": "Un «concerto» di centoventi professori",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1945"
+      },
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_un_concerto_di_120_professori_princeps",
+      "gbo:hasNote": "Testo della prima edizione de L'Adalgisa (Le Monnier 1944)",
+      "gbo:hasPosition": "8.0",
+      "gbo:hasTitle": "Un «concerto» di centoventi professori",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_2012"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_notte_di_luna_2012",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Notte di luna",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna_1"
+      },
+      "schema:pagination": "289-298"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_un_concerto_di_120_professori_2012",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Un «concerto» di 120 professori",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori"
+      },
+      "schema:pagination": "183-230"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasCompositionDateFrom": "post 12/1952",
+      "gbo:hasCompositionDateTo": "ante 12/1955",
+      "gbo:hasIdentifier": "expression_l'a_sf",
+      "gbo:hasNote": "Testo dell'edizione (Einaudi 1955). Vengono reintrodotti i racconti espunti nell'edizione Le Monnier 1945",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N12",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_primato_A3_N12",
+      "gbo:hasIssueDetails": "a. III, n. 12",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "Primato (15/06/1942)"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/Publication",
+      "gbo:hasIdentifier": "publication_l'a_2012",
+      "gbo:hasPublicationType": "Libri e raccolte d'autore",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "gbo:publisher": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_adelphi"
+      },
+      "lrmoo:R4i_embodies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2012"
+      },
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_milano"
+      },
+      "rdam:P30106_has_series_statement": "Biblioteca Adelphi;592",
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      },
+      "schema:contributor": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/person/person_vela"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/Publication",
+      "gbo:hasIdentifier": "publication_l'a_1945",
+      "gbo:hasNote": "Edizione di 1200 esemplari numerati",
+      "gbo:hasPublicationType": "Libri e raccolte d'autore",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "gbo:publisher": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier"
+      },
+      "lrmoo:R4i_embodies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1945"
+      },
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze"
+      },
+      "rdam:P30106_has_series_statement": "Quaderni di letteratura e d'arte;8-9",
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quando_il_girolamo_ha_smesso_2012",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso….",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/Publication",
+      "gbo:hasIdentifier": "publication_l'a_1988",
+      "gbo:hasPublicationType": "Libri e raccolte d'autore",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "lrmoo:R4i_embodies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      },
+      "lrmoo:R71i_is_part_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      },
+      "schema:contributor": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/person/person_lucchini"
+      },
+      "schema:pagination": "283-564"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_un_concerto_di_centoventi_professori",
+      "gbo:hasSourceWork": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_fulmine"
+      },
+      "gbo:hasTitle": "Un «concerto» di centoventi professori",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_periodico"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_seconda_edizione"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_sf"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1942"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1945"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_2012"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_periodico",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_quattro_figlie_periodico",
+      "gbo:hasNote": "Testo dell'edizione pubblicata su «Letteratura»",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1942"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_l'adalgisa_1955",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "L'Adalgisa",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_i_ritagli_di_tempo_1955",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quando_il_girolamo_ha_smesso_1988",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso….",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      },
+      "schema:pagination": "299-342"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_primato",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_l'adalgisa_primato",
+      "gbo:hasNote": "Testo dell'edizione pubblicata su «Primato»",
+      "gbo:hasTitle": "L'Adalgisa (Racconto di C.E.G.)",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1942_a"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1942_b"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_claudio_disimpara_a_vivere_sf",
+      "gbo:hasNote": "Testo de L'Adalgisa (Einaudi 1955, parte della silloge I sogni la folgore)",
+      "gbo:hasPosition": "3.0",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1988"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      }
+    },
+    {
+      "@id": "http://rdaregistry.info/Elements/m/P30135_has_work_manifested",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A4_N14",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_primato_A4_N14",
+      "gbo:hasIssueDetails": "a. IV, n. 14",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "Primato (15/07/1943)"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_seconda_edizione",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_i_ritagli_di_tempo_seconda_edizione",
+      "gbo:hasNote": "Testo della seconda edizione de L'Adalgisa (Le Monnier 1945)",
+      "gbo:hasPosition": "4.0",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1945"
+      },
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_seconda_edizione",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_al_parco_in_una_sera_di_maggio_seconda_edizione",
+      "gbo:hasNote": "Testo della seconda edizione de L'Adalgisa (Le Monnier 1945)",
+      "gbo:hasPosition": "6.0",
+      "gbo:hasTitle": "Al Parco, in una sera di maggio",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1945"
+      },
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_periodico",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_i_ritagli_di_tempo_periodico",
+      "gbo:hasNote": "Testo dell'edizione pubblicata su «Primato»",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1942"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasSourceWork",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_seconda_edizione",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_claudio_disimpara_a_vivere_seconda_edizione",
+      "gbo:hasNote": "Testo della seconda edizione de L'Adalgisa (Le Monnier 1945)",
+      "gbo:hasPosition": "2.0",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1945"
+      },
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_navi_approdano_al_parapagal",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_navi_approdano_al_parapagal",
+      "gbo:hasSourceWork": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_cdd"
+      },
+      "gbo:hasTitle": "Navi approdano al Parapagàl",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_navi_approdano_al_parapagal_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_navi_approdano_al_parapagal_sf"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_2012"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_periodico",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasCompositionDateFrom": "?",
+      "gbo:hasCompositionDateTo": "ante 15/06/1942",
+      "gbo:hasIdentifier": "expression_notte_di_luna_periodico",
+      "gbo:hasNote": "Testo dell'edizione pubblicata su «Primato»",
+      "gbo:hasTitle": "Notte di luna – Paese, a guisa d’introduzione",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1942"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1945",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_seconda_edizione"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_claudio_disimpara_a_vivere_1945",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_al_parco_in_una_sera_di_maggio_2012",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Al Parco, in una sera di maggio",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio"
+      },
+      "schema:pagination": "231-262"
+    },
+    {
+      "@id": "http://iflastandards.info/ns/lrm/lrmoo/R7_exemplifies",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_la_nazione_14_12_1940",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_la_nazione_14_12_1940",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_la_nazione"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "La Nazione (14/10/1940)"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_l'adalgisa_2012",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "L'Adalgisa",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "schema:pagination": "263-328"
+    },
+    {
+      "@id": "http://schema.org/genre",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_i_ritagli_di_tempo",
+      "gbo:hasSourceWork": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_fulmine"
+      },
+      "gbo:hasTitle": "I ritagli di tempo",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_periodico"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_seconda_edizione"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_sf"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_antologia_scrittori_lombardi"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1942"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_2012"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_un_concerto_di_120_professori_1955",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Un «concerto» di 120 professori",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1943_bal",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F5_Item",
+      "crm:P50_has_current_keeper": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal"
+      },
+      "gbo:hasIdentifier": "item_l'a_1943_bal",
+      "gbo:hasNote": "True",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "gbo:isAnnotated": false,
+      "lrmoo:R7_exemplifies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdai:P40069_has_related_work_of_item": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_navi_approdano_al_parapagal_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_navi_approdano_al_parapagal_1955",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Navi approdano al Parapagàl",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_navi_approdano_al_parapagal"
+      },
+      "schema:pagination": "209-232"
+    },
+    {
+      "@id": "http://rdaregistry.info/Elements/m/P30106_has_series_statement",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_periodico",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasCompositionDateFrom": "post 12/1940",
+      "gbo:hasCompositionDateTo": "ante 12/1942",
+      "gbo:hasIdentifier": "expression_un_concerto_di_120_professori_periodico",
+      "gbo:hasNote": "Testo dell'edizione pubblicata su «Letteratura»",
+      "gbo:hasTitle": "Un \"concerto\" di 120 professori - Disegno su due fogli arancio pallido",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1942"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze",
+      "@type": "http://schema.org/Place",
+      "gbo:hasIdentifier": "place_firenze",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Firenze"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_primato",
+      "@type": "http://purl.org/ontology/bibo/1.3/Periodical",
+      "gbo:hasIdentifier": "periodical_primato",
+      "gbo:hasPeriodicalIssue": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N12"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N18"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N19"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N6"
+        }
+      ],
+      "gbo:hasTitle": "Primato - Lettere e Arti d'Italia",
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_roma"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_i_ritagli_di_tempo_2012",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "schema:pagination": "145-164"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_incompiuti",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_notte_di_luna_incompiuti",
+      "gbo:hasNote": "Testo della prima pubblicazione (in Novella seconda, Garzanti 1971)",
+      "gbo:hasTitle": "Notte di luna",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1971"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1989"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1943_a",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_periodico"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quando_il_girolamo_ha_smesso_1943_a",
+      "gbo:hasPublicationType": "Prosa/racconto su pubblicazione periodica",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso… (I)",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_la_ruota_S3_A4_N2"
+      },
+      "http://rdaregistry.info/Elements/u/60306_is_continued_by": "publicationcomponent_quando_il_girolamo_ha_smesso_1943_b",
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth",
+        "@value": "1943-01"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      },
+      "schema:pagination": "33-44"
+    },
+    {
+      "@id": "http://schema.org/birthPlace",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1945_btm",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F5_Item",
+      "crm:P50_has_current_keeper": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/actor/actor_btm"
+      },
+      "gbo:hasIdentifier": "item_l'a_1945_btm",
+      "gbo:hasNote": "False",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "gbo:isAnnotated": false,
+      "lrmoo:R7_exemplifies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+      },
+      "rdai:P40069_has_related_work_of_item": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1942",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_periodico"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_un_concerto_di_120_professori_1942",
+      "gbo:hasPublicationType": "Prosa/racconto su pubblicazione periodica",
+      "gbo:hasTitle": "Un \"concerto\" di 120 professori - Disegno su due fogli arancio pallido",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_letteratura_23_A6_N3"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth",
+        "@value": "1942-01"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori"
+      },
+      "schema:pagination": "48-66"
+    },
+    {
+      "@id": "http://rdaregistry.info/Elements/w/P10310_has_related_item_of_work",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_la_nazione",
+      "@type": "http://purl.org/ontology/bibo/1.3/Periodical",
+      "gbo:hasIdentifier": "periodical_la_nazione",
+      "gbo:hasPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_la_nazione_14_12_1940"
+      },
+      "gbo:hasTitle": "La Nazione",
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasPeriodicalIssue",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "http://schema.org/author",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasCompositionDateFrom": "post 09/1941",
+      "gbo:hasCompositionDateTo": "ante 22/12/1943",
+      "gbo:hasIdentifier": "expression_l'a_princeps",
+      "gbo:hasNote": "Testo della prima edizione (Le Monnier 1944)",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_periodico",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_quando_il_girolamo_ha_smesso_periodico",
+      "gbo:hasNote": "Testo dell'edizione pubblicata su «La Ruota»",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso…",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1943_a"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1943_b"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_al_parco_in_una_sera_di_maggio_1988",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Al Parco, in una sera di maggio",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio"
+      },
+      "schema:pagination": "481-507"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_antologia_scrittori_lombardi",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_i_ritagli_di_tempo_antologia_scrittori_lombardi",
+      "gbo:hasNote": "Testo pubblicato nell'antologia di Scrittori lombardi",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1961"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_quattro_figlie_sf",
+      "gbo:hasNote": "Testo de L'Adalgisa (Einaudi 1955, parte della silloge I sogni la folgore)",
+      "gbo:hasPosition": "4.0",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1988"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1940",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_periodico"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_claudio_disimpara_a_vivere_1940",
+      "gbo:hasPublicationType": "Prosa/racconto su pubblicazione periodica",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_la_nazione_14_12_1940"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1940-12-14"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere"
+      },
+      "schema:pagination": "3"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_navi_approdano_al_parapagal_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_navi_approdano_al_parapagal_1944",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Navi approdano al Parapagàl",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_navi_approdano_al_parapagal"
+      },
+      "schema:pagination": "209-232"
+    },
+    {
+      "@id": "http://iflastandards.info/ns/lrm/lrmoo/R71i_is_part_of",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna_2",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_notte_di_luna_2",
+      "gbo:hasTitle": "Notte di luna",
+      "lrmoo:R3_is_realised_by": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_incompiuti"
+      },
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1971"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1989"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "http://iflastandards.info/ns/lrm/lrmoo/R2_is_derivative_of",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasPublicationType",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_strane_dicerie_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_strane_dicerie_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_strane_dicerie_1988",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Strane dicerie contristano i Bertoloni",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_strane_dicerie_contristano_i_bertoloni"
+      },
+      "schema:pagination": "379-406"
+    },
+    {
+      "@id": "http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_claudio_disimpara_a_vivere",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_periodico"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_seconda_edizione"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_sf"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1940"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1945"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_2012"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "http://rdaregistry.info/Elements/w/P10072_has_manifestation_of_work",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna_1",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_notte_di_luna_1",
+      "gbo:hasSourceWork": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ri"
+      },
+      "gbo:hasTitle": "Notte di luna",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_periodico"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_sf"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1942"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_2012"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ns",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_ns",
+      "gbo:hasTitle": "Novella seconda",
+      "lrmoo:R3_is_realised_by": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ns"
+      },
+      "rdaw:P10072_has_manifestation_of_work": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_ns_1971"
+      },
+      "schema:genre": "Narrativa"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quattro_figlie_1988",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina"
+      },
+      "schema:pagination": "353-378"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/actor/actor_btm",
+      "@type": "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+      "gbo:hasIdentifier": "actor_btm",
+      "http://www.w3.org/2000/01/rdf-schema#label": "Biblioteca Trivulziana di Milano"
+    },
+    {
+      "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_by",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_2012",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_navi_approdano_al_parapagal_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_navi_approdano_al_parapagal_2012",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Navi approdano al Parapagàl",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_navi_approdano_al_parapagal"
+      },
+      "schema:pagination": "165-182"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_seconda_edizione",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_quando_il_girolamo_ha_smesso_seconda_edizione",
+      "gbo:hasNote": "Testo della seconda edizione de L'Adalgisa (Le Monnier 1945)",
+      "gbo:hasPosition": "1.0",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso….",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      },
+      "lrmoo:R4_is_embodied_in": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1945"
+      },
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/isIncludedInPeriodicalIssue",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/Publication",
+      "gbo:hasIdentifier": "publication_l'a_1955",
+      "gbo:hasPublicationType": "Libri e raccolte d'autore",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "lrmoo:R4i_embodies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      },
+      "lrmoo:R71i_is_part_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_sf_1955"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_al_parco_in_una_sera_di_maggio_1944",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Al Parco, in una sera di maggio",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio"
+      },
+      "schema:pagination": "297-340"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/Publication",
+      "gbo:hasIdentifier": "publication_l'a_1944",
+      "gbo:hasNote": "Edizione di 1000 esemplari numerati",
+      "gbo:hasPublicationType": "Libri e raccolte d'autore",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "gbo:publisher": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier"
+      },
+      "lrmoo:R4i_embodies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1944"
+      },
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze"
+      },
+      "rdam:P30106_has_series_statement": "Quaderni di letteratura e d'arte;8-9",
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_un_concerto_di_120_professori_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_un_concerto_di_120_professori_sf",
+      "gbo:hasNote": "Testo de L'Adalgisa (Einaudi 1955, parte della silloge I sogni la folgore)",
+      "gbo:hasPosition": "8.0",
+      "gbo:hasTitle": "Un «concerto» di centoventi professori",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_un_concerto_di_centoventi_professori"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1942"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_un_concerto_di_120_professori_1955"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      }
+    },
+    {
+      "@id": "http://schema.org/deathPlace",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_la_ruota_S3_A4_N2",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_la_ruota_S3_A4_N2",
+      "gbo:hasIssueDetails": "serie III, a. IV, n. 2 (febbraio 1943)",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_la_ruota"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "La Ruota (febbraio 1943)"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1942",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_periodico"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quattro_figlie_1942",
+      "gbo:hasPublicationType": "Prosa/racconto su pubblicazione periodica",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_letteratura_21_A6_N1"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth",
+        "@value": "1942-01"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina"
+      },
+      "schema:pagination": "28-40"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1971",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_incompiuti"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_notte_di_luna_1971",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Notte di luna",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_ns_1971"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna_2"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1943_b",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_periodico"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quando_il_girolamo_ha_smesso_1943_b",
+      "gbo:hasPublicationType": "Prosa/racconto su pubblicazione periodica",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso… (II)",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_la_ruota_S3_A4_N3"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth",
+        "@value": "1943-01"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      },
+      "schema:pagination": "72-82"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_claudio_disimpara_a_vivere_1988",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere"
+      },
+      "schema:pagination": "343-352"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1942_b",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_primato"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_l'adalgisa_1942_b",
+      "gbo:hasPublicationType": "Prosa/racconto su pubblicazione periodica",
+      "gbo:hasTitle": "L'Adalgisa (Continuazione del numero precedente e fine)",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N19"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1942-10-01"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "schema:pagination": "360-362"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_sf",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_quando_il_girolamo_ha_smesso_sf",
+      "gbo:hasNote": "Testo de L'Adalgisa (Einaudi 1955, parte della silloge I sogni la folgore)",
+      "gbo:hasPosition": "2.0",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso….",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1988"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_quando_il_girolamo_ha_smesso",
+      "gbo:hasSourceWork": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_fulmine"
+      },
+      "gbo:hasTitle": "Quando il Girolamo ha smesso….",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_periodico"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_sf"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1943_a"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1943_b"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1945"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_2012"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F1_Work",
+      "gbo:hasIdentifier": "work_al_parco_in_una_sera_di_maggio",
+      "gbo:hasSourceWork": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_fulmine"
+      },
+      "gbo:hasTitle": "Al Parco, in una sera di maggio",
+      "lrmoo:R3_is_realised_by": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_seconda_edizione"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf"
+        }
+      ],
+      "rdaw:P10072_has_manifestation_of_work": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_benignità_1943"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1945"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1955"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1988"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_2012"
+        }
+      ],
+      "schema:genre": "Racconto"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_i_ritagli_di_tempo_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_i_ritagli_di_tempo_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_i_ritagli_di_tempo_1988",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "I ritagli di tempo",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_i_ritagli_di_tempo"
+      },
+      "schema:pagination": "407-424"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_tesoretto",
+      "@type": "http://purl.org/ontology/bibo/1.3/Periodical",
+      "gbo:hasIdentifier": "periodical_tesoretto",
+      "gbo:hasPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_tesoretto_1941"
+      },
+      "gbo:hasTitle": "Il Tesoretto. Almanacco dello Specchio",
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_milano"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasPseudonym",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasCompositionDateFrom",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_notte_di_luna_1944",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Notte di luna",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna_1"
+      },
+      "schema:pagination": "1-14"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_letteratura",
+      "@type": "http://purl.org/ontology/bibo/1.3/Periodical",
+      "gbo:hasIdentifier": "periodical_letteratura",
+      "gbo:hasPeriodicalIssue": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_letteratura_21_A6_N1"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_letteratura_23_A6_N3"
+        }
+      ],
+      "gbo:hasTitle": "Letteratura",
+      "http://rdaregistry.info/Elements/u/60306_is_continued_by": "periodical_letteratura_arte_contemporanea",
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quando_il_girolamo_ha_smesso_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quando_il_girolamo_ha_smesso_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quando_il_girolamo_ha_smesso_1955",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Quando il Girolamo ha smesso….",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quando_il_girolamo_ha_smesso"
+      }
+    },
+    {
+      "@id": "http://iflastandards.info/ns/lrm/lrmoo/R4_is_embodied_in",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_navi_approdano_al_parapagal_1988",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_navi_approdano_al_parapagal_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_navi_approdano_al_parapagal_1988",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Navi approdano al Parapagàl",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_navi_approdano_al_parapagal"
+      },
+      "schema:pagination": "690-702"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1945_bal",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F5_Item",
+      "crm:P50_has_current_keeper": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal"
+      },
+      "gbo:hasIdentifier": "item_l'a_1945_bal",
+      "gbo:hasNote": "True",
+      "gbo:hasTitle": "L'Adalgisa - Disegni milanesi",
+      "gbo:isAnnotated": false,
+      "lrmoo:R7_exemplifies": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945"
+      },
+      "rdai:P40069_has_related_work_of_item": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_la"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:hasIdentifier": "publicationcomponent_notte_di_luna_1955"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/isPartOfSection",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1942",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_notte_di_luna_periodico"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_notte_di_luna_1942",
+      "gbo:hasPublicationType": "Prosa/racconto su pubblicazione periodica",
+      "gbo:hasTitle": "Notte di luna – Paese, a guisa d’introduzione",
+      "gbo:isIncludedInPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A3_N12"
+      },
+      "rdam:P30011_has_date_of_publication": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1942-06-15"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_notte_di_luna_1"
+      },
+      "schema:pagination": "229-230"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_ladalgisa_princeps",
+      "@type": "http://iflastandards.info/ns/lrm/lrmoo/F2_Expression",
+      "gbo:hasIdentifier": "expression_l'adalgisa_princeps",
+      "gbo:hasNote": "Testo della prima edizione de L'Adalgisa (Le Monnier 1944)",
+      "gbo:hasPosition": "10.0",
+      "gbo:hasTitle": "L'Adalgisa",
+      "lrmoo:R3i_realises": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_ladalgisa"
+      },
+      "lrmoo:R4_is_embodied_in": [
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_1944"
+        },
+        {
+          "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_ladalgisa_2012"
+        }
+      ],
+      "lrmoo:R5i_is_component_of": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps"
+      }
+    },
+    {
+      "@id": "http://iflastandards.info/ns/lrm/lrmoo/R3i_realises",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_tesoretto_1941",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PeriodicalIssue",
+      "gbo:hasIdentifier": "periodicalissue_tesoretto_1941",
+      "gbo:hasPeriodical": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_tesoretto"
+      },
+      "http://www.w3.org/2000/01/rdf-schema#label": "Tesoretto (1941)"
+    },
+    {
+      "@id": "http://rdaregistry.info/Elements/i/P40069_has_related_work_of_item",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_claudio_disimpara_a_vivere_1944",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_claudio_disimpara_a_vivere_princeps"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_claudio_disimpara_a_vivere_1944",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Claudio disimpara a vivere",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_claudio_disimpara_a_vivere"
+      },
+      "schema:pagination": "85-98"
+    },
+    {
+      "@id": "http://rdaregistry.info/Elements/m/P30011_has_date_of_publication",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_quattro_figlie_1955",
+      "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
+      "gbo:carries": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/expression/expression_quattro_figlie_sf"
+      },
+      "gbo:hasIdentifier": "publicationcomponent_quattro_figlie_1955",
+      "gbo:hasPublicationType": "Prosa/racconto in volume",
+      "gbo:hasTitle": "Quattro figlie ebbe e ciascuna regina",
+      "gbo:isIncludedInVolume": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955"
+      },
+      "rdam:P30135_has_work_manifested": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/work/work_quattro_figlie_ebbe_e_ciascuna_regina"
+      }
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/hasIssueDetails",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    {
+      "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodical/periodical_la_ruota",
+      "@type": "http://purl.org/ontology/bibo/1.3/Periodical",
+      "gbo:hasIdentifier": "periodical_la_ruota",
+      "gbo:hasPeriodicalIssue": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_la_ruota_S3_A4_N2"
+      },
+      "gbo:hasTitle": "La Ruota",
+      "rdam:P30088_has_place_of_publication": {
+        "@id": "https://github.com/mod-bib/biblio-gad/ontology/place/place_roma"
+      }
+    }
+  ]
+}
