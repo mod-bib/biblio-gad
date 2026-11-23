@@ -146,7 +146,7 @@ nav a:hover {
     /* width: 45%; */
     height: 15em;
     background-color: var(--body-primary);
-    border: 1px solid black;
+    background-color: rgba(148, 140, 174, 0.3);
     border-radius: 10px;
     padding: 2em;
     position: relative;
@@ -160,10 +160,11 @@ nav a:hover {
 #author-banner > h3, #model-banner > h3 {
     font-size:xx-large;
     font-weight: bold;
-    color:black;
+    color:darkslategray;
+    transition: color 0.3s ease-in;
 }
 #author-banner:hover, #model-banner:hover {
-    background-color: #ffffff;
+    background-color: rgba(148, 140, 174, 0.5);
 }
 /*----Case studies page----*/
 #main-case-studies {
