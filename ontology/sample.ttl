@@ -124,62 +124,62 @@ gbo:represents a owl:ObjectProperty .
     gbo:hasName "Carlo Emilio Gadda"^^xsd:string ;
     gbo:hasPseudonym "Alì Oco de Madrigal; Alis Oco de Madrigal; Aligi di Ca da l'Ormo"^^xsd:string .
 
-<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1988> a gbo:ComponentPublication ;
+<https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1988> a gbo:PublicationComponent ;
     rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     schema1:pagination "481-507"^^xsd:string ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf> ;
-    gbo:hasIdentifier "componentpublication_al_parco_in_una_sera_di_maggio_1988"^^xsd:string ;
+    gbo:hasIdentifier "publicationcomponent_al_parco_in_una_sera_di_maggio_1988"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
     gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988> .
 
-<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_2012> a gbo:ComponentPublication ;
+<https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_2012> a gbo:PublicationComponent ;
     rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     schema1:pagination "231-262"^^xsd:string ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps> ;
-    gbo:hasIdentifier "componentpublication_al_parco_in_una_sera_di_maggio_2012"^^xsd:string ;
+    gbo:hasIdentifier "publicationcomponent_al_parco_in_una_sera_di_maggio_2012"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
     gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012> .
 
-<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1944> a gbo:ComponentPublication ;
+<https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1944> a gbo:PublicationComponent ;
     rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     schema1:pagination "297-340"^^xsd:string ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps> ;
-    gbo:hasIdentifier "componentpublication_al_parco_in_una_sera_di_maggio_1944"^^xsd:string ;
+    gbo:hasIdentifier "publicationcomponent_al_parco_in_una_sera_di_maggio_1944"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
     gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944> .
 
-<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1945> a gbo:ComponentPublication ;
+<https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1945> a gbo:PublicationComponent ;
     rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_seconda_edizione> ;
-    gbo:hasIdentifier "componentpublication_al_parco_in_una_sera_di_maggio_1945"^^xsd:string ;
+    gbo:hasIdentifier "publicationcomponent_al_parco_in_una_sera_di_maggio_1945"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
     gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945> .
 
-<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1955> a gbo:ComponentPublication ;
+<https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1955> a gbo:PublicationComponent ;
     rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf> ;
-    gbo:hasIdentifier "componentpublication_al_parco_in_una_sera_di_maggio_1955"^^xsd:string ;
+    gbo:hasIdentifier "publicationcomponent_al_parco_in_una_sera_di_maggio_1955"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
     gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955> .
 
-<https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_la_benignità_1943> a gbo:ComponentPublication ;
+<https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_benignità_1943> a gbo:PublicationComponent ;
     rdam:P30011_has_date_of_publication "1943-07-15"^^xsd:date ;
     rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     schema1:pagination "253"^^xsd:string ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico> ;
-    gbo:hasIdentifier "componentpublication_la_benignità_1943"^^xsd:string ;
+    gbo:hasIdentifier "publicationcomponent_la_benignità_1943"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in rivista"^^xsd:string ;
     gbo:hasTitle "La benignità"^^xsd:string ;
     gbo:isIncludedInPeriodicalIssue "periodicalissue_primato_A4_N14"^^xsd:string .
 
 <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_seconda_edizione> a lrmoo:F2_Expression ;
     lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
-    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1945> ;
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1945> ;
     lrmoo:R5i_is_component_of <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione> ;
     gbo:hasIdentifier "expression_al_parco_in_una_sera_di_maggio_seconda_edizione"^^xsd:string ;
     gbo:hasNote "Testo della seconda edizione de L'Adalgisa (Le Monnier 1945)"^^xsd:string ;
@@ -188,7 +188,7 @@ gbo:represents a owl:ObjectProperty .
 
 <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps> a lrmoo:F2_Expression ;
     lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
-    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1944>,
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1944>,
         <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_2012> ;
     lrmoo:R5i_is_component_of <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps> ;
     gbo:hasIdentifier "expression_al_parco_in_una_sera_di_maggio_princeps"^^xsd:string ;
@@ -198,7 +198,7 @@ gbo:represents a owl:ObjectProperty .
 
 <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf> a lrmoo:F2_Expression ;
     lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
-    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_al_parco_in_una_sera_di_maggio_1955>,
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1955>,
         <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_1988> ;
     lrmoo:R5i_is_component_of <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_sf> ;
     gbo:hasIdentifier "expression_al_parco_in_una_sera_di_maggio_sf"^^xsd:string ;
@@ -208,7 +208,7 @@ gbo:represents a owl:ObjectProperty .
 
 <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico> a lrmoo:F2_Expression ;
     lrmoo:R3i_realises <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
-    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_la_benignità_1943> ;
+    lrmoo:R4_is_embodied_in <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_benignità_1943> ;
     gbo:hasIdentifier "expression_la_benignità_periodico"^^xsd:string ;
     gbo:hasNote "Testo dell'edizione pubblicata su «Primato»"^^xsd:string ;
     gbo:hasTitle "La benignità"^^xsd:string .
@@ -218,7 +218,7 @@ gbo:represents a owl:ObjectProperty .
         <https://github.com/mod-bib/biblio-gad/ontology/expr/expr_al_parco_in_una_sera_di_maggio_seconda_edizione>,
         <https://github.com/mod-bib/biblio-gad/ontology/expr/expr_al_parco_in_una_sera_di_maggio_sf>,
         <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico> ;
-    rdaw:P10072_has_manifestation_of_work <https://github.com/mod-bib/biblio-gad/ontology/componentpublication/componentpublication_la_benignità_1943>,
+    rdaw:P10072_has_manifestation_of_work <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_benignità_1943>,
         <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_1944>,
         <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_1945>,
         <https://github.com/mod-bib/biblio-gad/ontology/cp/cp_al_parco_in_una_sera_di_maggio_1955>,
