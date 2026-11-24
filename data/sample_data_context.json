@@ -3151,7 +3151,8 @@
     {
       "@id": "https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_notte_di_luna_1955",
       "@type": "https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent",
-      "gbo:hasIdentifier": "publicationcomponent_notte_di_luna_1955"
+      "gbo:hasIdentifier": "publicationcomponent_notte_di_luna_1955",
+      "gbo:hasTitle": "Notte di luna"
     },
     {
       "@id": "https://github.com/mod-bib/biblio-gad/ontology/isPartOfSection",

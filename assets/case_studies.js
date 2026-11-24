@@ -39,16 +39,70 @@ document.addEventListener("DOMContentLoaded", (event) => {
                var dateSlug = data["@graph"][i]["gbo:hasIdentifier"].split("_").pop()
                // create array to sort 
                var titleLabel = data["@graph"][i]["gbo:hasTitle"] + " " + "(" + dateSlug + ")"
-               pubArray.push(titleLabel);
+               
+               // troubleshoot undefined item
+               const entity = data["@graph"][i];
+               const rawTitle = entity["gbo:hasTitle"];
+
+               if (rawTitle === undefined || rawTitle === null || rawTitle === "") {
+                  console.warn("Missing gbo:hasTitle on graph item:", {
+                     index: i,
+                     id: entity["@id"],
+                     keys: Object.keys(entity),
+                     entity
+                  });
+               }
+
+               // populate publication array to sort alphabetically
+               pubArray.push({
+                  titleLabel,
+                  "Publication type": data["@graph"][i]["gbo:hasPublicationType"],
+                  "Pages": data["@graph"][i]["schema:pagination"]
+               });
+               //console.log(pubArray)
             }
          }
-         pubArray.sort()
-               for (const titleLabel of pubArray) {
+         pubArray.sort((a, b) => {
+            const titleA = a.titleLabel.toLowerCase(); 
+            const titleB = b.titleLabel.toLowerCase();
+            if (titleA < titleB) {
+               return -1;
+            }
+            if (titleA > titleB) {
+               return 1;
+            }
+            return 0;
+         });
+               for (const publication of pubArray) {
                   const itemDiv = document.createElement("div");
-                  itemDiv.appendChild(document.createElement("h3")).textContent = titleLabel
+                  itemDiv.appendChild(document.createElement("h3")).textContent = publication.titleLabel
+                  //pubDiv.appendChild(itemDiv)
+
+                  // div for metadata list
+                  const pubMeta = document.createElement("ul")
+                  pubMeta.setAttribute("class", "metadata-ul")
+
+                  // conditional blocks for additional metadata properties
+                  if (publication["Publication type"]) {
+                     const liPubType = document.createElement("li");
+                     liPubType.textContent = "Tipo di pubblicazione:" + " " + publication["Publication type"]
+                     pubMeta.appendChild(liPubType)
+                  }
+
+                  if (publication["Pages"]) {
+                     const liPages = document.createElement("li");
+                     liPages.textContent = "Pagine:" + " " + publication["Pages"]
+                     pubMeta.appendChild(liPages)
+                  }
+                  if (pubMeta.hasChildNodes()) {
+                     itemDiv.appendChild(pubMeta)
+                  }
+
                   pubDiv.appendChild(itemDiv)
                }
                divCase1.appendChild(pubDiv)
+
+               // poi lookup per relazioni con altre entità
    })
    .catch(console.error);
 });
