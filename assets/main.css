@@ -197,6 +197,21 @@ nav a:hover {
     height: fit-content;
 }
 
+.pub-div {
+    background-color: lightblue;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1em;
+    margin: 1em;
+}
+
+.pub-div > div {
+    background-color: #ffffff;
+    height: fit-content;
+    margin-top: 0.5em;
+}
+
 /*----Footer----*/
 #footer {
     height: min-content;
