@@ -49,9 +49,6 @@ h1 {
     padding-bottom: 1em;
     padding-top: 1em;
 }
-h2 {
-    padding-top: 1em;
-}
 h3 {
     padding-top: 0.5em;
 }
@@ -171,27 +168,41 @@ nav a:hover {
     padding: 0;
 }
 
+#main-case-studies p {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.5em;
+}
+
 #case-studies-title {
     font-size: 3.5em;
     color: darkslategray;
     font-weight: bold;
+    text-align: center;
 }
 
 #case-1-sec-title, #case-2-sec-title {
-    height: 16em;
+    height: 20em;
     display: grid;
     justify-content: center;
     align-content: center;
     background-color: rgba(148, 140, 174, 0.3);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-image: url("/imgs/duomo_milano_title.jpg");
+    background-size: cover;
 }
 
 #case-1-title, #case-2-title {
     font-weight: bold;
     color: darkslategray;
     /*color: midnightblue;*/
-    font-size: 2.5em;
+    font-size: 4em;
 }
 
+#opere-p {
+    padding-top: 1em;
+}
 .work-div {
     height: fit-content;
     padding: 1em;
@@ -241,6 +252,12 @@ nav a:hover {
 
 div[data-classType] {
     height: fit-content;
+}
+
+#tabs-case-studies {
+    height: 3.5em;
+    font-size: larger;
+    margin-top: 2.5em;
 }
 
 /*----Footer----*/
