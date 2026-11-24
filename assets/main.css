@@ -202,14 +202,19 @@ nav a:hover {
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 1em;
+    column-gap: 0.5em;
     margin: 1em;
 }
 
 .pub-div > div {
     background-color: #ffffff;
     height: fit-content;
-    margin-top: 0.5em;
+    margin: 0.5em 0.5em;
+    border-radius: 10px;
+}
+
+.pub-div > div > h3 {
+    padding: 0.5em;
 }
 
 /*----Footer----*/

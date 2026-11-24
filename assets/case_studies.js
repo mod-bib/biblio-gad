@@ -39,13 +39,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
                var dateSlug = data["@graph"][i]["gbo:hasIdentifier"].split("_").pop()
                // create array to sort 
                var titleLabel = data["@graph"][i]["gbo:hasTitle"] + " " + "(" + dateSlug + ")"
-               pubArray.push(titleLabel)
+               pubArray.push(titleLabel);
             }
          }
          pubArray.sort()
                for (const titleLabel of pubArray) {
                   const itemDiv = document.createElement("div");
-                  itemDiv.appendChild(document.createElement("h2")).textContent = titleLabel
+                  itemDiv.appendChild(document.createElement("h3")).textContent = titleLabel
                   pubDiv.appendChild(itemDiv)
                }
                divCase1.appendChild(pubDiv)
