@@ -193,12 +193,25 @@ nav a:hover {
 }
 
 .work-div {
-    background-color: yellow;
     height: fit-content;
+    padding: 1em;
+}
+
+.work-div > button {
+    height: fit-content;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: #ffffff;
+    margin: 5px;
+    transition: background-color 0.3 ease-in;
+}
+.work-div > button:hover {
+    background-color: darkslategray;
+    color:white;
 }
 
 .pub-div {
-    background-color: lightblue;
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -208,6 +221,7 @@ nav a:hover {
 
 .pub-div > div {
     background-color: #ffffff;
+    border: 2px solid darkslategray;
     height: fit-content;
     margin: 0.5em 0.5em;
     border-radius: 10px;
