@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# namespace
+@prefix gt: <https://github.com/mod-bib/biblio-gad/skos_vocabularies/GT.ttl> .
+
+# concept scheme that represents the thesaurus
+gt:GenreThesaurus a skos:ConceptScheme .
+gt:GenreThesaurus skos:prefLabel "Genre Thesaurus"@en .
+
+# concept 1
+gt:Narrativa a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+gt:Narrativa skos:inScheme gt:GenreThesaurus .
+# preferred label
+gt:Narrativa skos:prefLabel "Narrativa"@it .
+
+# concept 2
+gt:Saggistica a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+gt:Saggistica skos:inScheme gt:GenreThesaurus .
+# preferred label
+gt:Saggistica skos:prefLabel "Saggistica"@it .
+
+# concept 3
+gt:Romanzo a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+gt:Romanzo skos:inScheme gt:GenreThesaurus .
+# preferred label
+gt:Romanzo skos:prefLabel "Romanzo"@it .
+gt:Romanzo skos:prefLabel "Novel"@en .
+gt:Romanzo skos:broader gt:Narrativa .
+
+# concept 4
+gt:Racconto a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+gt:Racconto skos:inScheme gt:GenreThesaurus .
+# preferred label
+gt:Racconto skos:prefLabel "Racconto"@it .
+gt:Racconto skos:prefLabel "Short story"@en .
+gt:Racconto skos:broader gt:Narrativa .
+
+# concept 5
+gt:Saggio a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+gt:Saggio skos:inScheme gt:GenreThesaurus .
+# preferred label
+gt:Saggio skos:prefLabel "Saggio"@it .
+gt:Saggio skos:prefLabel "Essay"@en .
+gt:Saggio skos:broader gt:Saggistica .
+
+# concept 6
+gt:ArticoloTecnico a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+gt:ArticoloTecnico skos:inScheme gt:GenreThesaurus .
+# preferred label
+gt:ArticoloTecnico skos:prefLabel "Articolo tecnico"@it .
+gt:ArticoloTecnico skos:prefLabel "Technical article"@en .
+gt:ArticoloTecnico skos:broader gt:Saggistica .
+
+
+# concept 7
+antt:PostillaMetatestuale  a skos:Concept .
+antt:PostillaMetatestuale skos:inScheme antt:AnnotationTypeThesaurus .
+antt:PostillaMetatestuale skos:prefLabel "Postilla metatestuale"@it .
+
+antt:PostillaMetatestuale skos:broader antt:Postilla .
+
+# concept 8
+antt:FonteCertificazioneLinguistica  a skos:Concept .
+antt:FonteCertificazioneLinguistica skos:inScheme antt:AnnotationTypeThesaurus .
+antt:FonteCertificazioneLinguistica skos:prefLabel "Fonte di certificazione linguistica"@it .
+
+antt:FonteCertificazioneLinguistica skos:broader antt:Postilla .

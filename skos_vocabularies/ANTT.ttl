@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# namespace
+@prefix antt: <https://github.com/mod-bib/biblio-gad/skos_vocabularies/ANTT.ttl> .
+
+# concept scheme that represents the thesaurus
+antt:AnnotationTypeThesaurus a skos:ConceptScheme .
+antt:AnnotationTypeThesaurus skos:prefLabel "Annotation Type Thesaurus"@en .
+
+# concept 1
+antt:Postilla a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+antt:Postilla skos:inScheme antt:AnnotationTypeThesaurus .
+# preferred label
+antt:Postilla skos:prefLabel "Postilla"@it .
+
+# concept 2
+antt:PostillaTipografo a skos:Concept .
+antt:PostillaTipografo skos:inScheme antt:AnnotationTypeThesaurus .
+antt:PostillaTipografo skos:prefLabel "Postilla per il tipografo"@it .
+# alternate label
+
+# and then say that me:Car is a more specific concept than me:Vehicle
+antt:PostillaTipografo skos:broader antt:Postilla .
+
+# concept 3
+antt:Variante  a skos:Concept .
+antt:Variante skos:inScheme antt:AnnotationTypeThesaurus .
+antt:Variante skos:prefLabel "Variante"@it .
+
+antt:Variante skos:broader antt:Postilla .
+
+# concept 4
+antt:NotaPossesso  a skos:Concept .
+antt:NotaPossesso skos:inScheme antt:AnnotationTypeThesaurus .
+antt:NotaPossesso skos:prefLabel "Nota di possesso"@it .
+
+antt:Variante skos:broader antt:Postilla .
+
+# concept 5
+antt:Marginalia  a skos:Concept .
+antt:Marginalia skos:inScheme antt:AnnotationTypeThesaurus .
+antt:Marginalia skos:prefLabel "Marginalia"@it .
+
+antt:Marginalia skos:broader antt:Postilla .
+
+# concept 6
+antt:PostillaStrutturale  a skos:Concept .
+antt:PostillaStrutturale skos:inScheme antt:AnnotationTypeThesaurus .
+antt:PostillaStrutturale skos:prefLabel "Postilla strutturale"@it .
+
+antt:PostillaStrutturale skos:broader antt:Postilla .
+
+# concept 7
+antt:PostillaMetatestuale  a skos:Concept .
+antt:PostillaMetatestuale skos:inScheme antt:AnnotationTypeThesaurus .
+antt:PostillaMetatestuale skos:prefLabel "Postilla metatestuale"@it .
+
+antt:PostillaMetatestuale skos:broader antt:Postilla .
+
+# concept 8
+antt:FonteCertificazioneLinguistica  a skos:Concept .
+antt:FonteCertificazioneLinguistica skos:inScheme antt:AnnotationTypeThesaurus .
+antt:FonteCertificazioneLinguistica skos:prefLabel "Fonte di certificazione linguistica"@it .
+
+antt:FonteCertificazioneLinguistica skos:broader antt:Postilla .

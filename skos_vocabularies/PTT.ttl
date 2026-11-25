@@ -1,0 +1,107 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# namespace
+@prefix ptt: <https://github.com/mod-bib/biblio-gad/skos_vocabularies/PTT.ttl> .
+
+# concept scheme that represents the thesaurus
+ptt:PublicationTypeThesaurus a skos:ConceptScheme .
+ptt:PublicationTypeThesaurus skos:prefLabel "Publication Type Thesaurus"@en .
+
+# concept 1
+ptt:LibriRaccolte a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:LibriRaccolte skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:LibriRaccolte skos:prefLabel "Libri e raccolte d'autore"@it .
+
+# concept 2
+ptt:EdizioniPostume a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:EdizioniPostume skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:EdizioniPostume skos:prefLabel "Edizioni postume"@it .
+
+# concept 3
+ptt:Introduzioni a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:Introduzioni skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:Introduzioni skos:prefLabel "Introduzioni"@it .
+
+# concept 4
+ptt:Prefazioni a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:Prefazioni skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:Prefazioni skos:prefLabel "Prefazioni"@it .
+
+# concept 5
+ptt:Interventi a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:Interventi skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:Interventi skos:prefLabel "Interventi"@it .
+
+# concept 6
+ptt:ArticoloSaggioVolume a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:ArticoloSaggioVolume skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:ArticoloSaggioVolume skos:prefLabel "Articolo/saggio in volume"@it .
+
+# concept 7
+ptt:ProsaRaccontoVolume a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:ProsaRaccontoVolume skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:ProsaRaccontoVolume skos:prefLabel "Prosa/racconto in volume"@it .
+
+# concept 8
+ptt:ProsaRaccontoPeriodico a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:ProsaRaccontoPeriodico skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:ProsaRaccontoPeriodico skos:prefLabel "Prosa/racconto su pubblicazione periodica"@it .
+
+# concept 9
+ptt:ArticoloSaggioPeriodico a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:ArticoloSaggioPeriodico skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:ArticoloSaggioPeriodico skos:prefLabel "Articolo/saggio su pubblicazione periodica"@it .
+
+# concept 10
+ptt:PoesiaPeriodico a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:PoesiaPeriodico skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:PoesiaPeriodico skos:prefLabel "Poesia su pubblicazione periodica"@it .
+
+# concept 11
+ptt:PoesiaVolume a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:PoesiaVolume skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:PoesiaVolume skos:prefLabel "Poesia in volume"@it .
+
+# concept 12
+ptt:TraduzioneVolume a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:TraduzioneVolume skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:TraduzioneVolume skos:prefLabel "Traduzione in volume"@it .
+
+# concept 13
+ptt:TraduzionePeriodico a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:TraduzionePeriodico skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:TraduzionePeriodico skos:prefLabel "Traduzione su pubblicazione periodica"@it .
+
+# concept 14
+ptt:Capitolo a skos:Concept .
+# for each concept you need to say it is part of the thesaurus
+ptt:Capitolo skos:inScheme ptt:PublicationTypeThesaurus .
+# preferred label
+ptt:Capitolo skos:prefLabel "Capitolo"@it .
