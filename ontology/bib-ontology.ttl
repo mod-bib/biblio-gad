@@ -17,7 +17,6 @@
 [ rdf:type owl:Ontology
  ] .
 
-
 #################################################################
 #    Datatypes
 #################################################################
@@ -39,7 +38,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://iflastandards.info/ns/lrm/lrmoo/R2_is_derivative_of
-lrmoo:R2_is_derivative_of rdf:type owl:ObjectProperty ;
+lrmoo:R2_is_derivative_of rdf:type owl:ObjectProperty ,
+                                   owl:AsymmetricProperty ,
+                                   owl:IrreflexiveProperty ;
                           rdfs:domain lrmoo:F1_Work ;
                           rdfs:range lrmoo:F1_Work ;
                           rdfs:comment "Collega un'opera all'opera da cui deriva."@it .
@@ -48,13 +49,17 @@ lrmoo:R2_is_derivative_of rdf:type owl:ObjectProperty ;
 ###  http://iflastandards.info/ns/lrm/lrmoo/R3_is_realised_by
 lrmoo:R3_is_realised_by rdf:type owl:ObjectProperty ;
                         owl:inverseOf lrmoo:R3i_realises ;
+                        rdf:type owl:AsymmetricProperty ,
+                                 owl:IrreflexiveProperty ;
                         rdfs:domain lrmoo:F1_Work ;
                         rdfs:range lrmoo:F2_Expression ;
                         rdfs:comment "Collega un Work alla Expression corrispondente."@it .
 
 
 ###  http://iflastandards.info/ns/lrm/lrmoo/R3i_realises
-lrmoo:R3i_realises rdf:type owl:ObjectProperty ;
+lrmoo:R3i_realises rdf:type owl:ObjectProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
                    rdfs:domain lrmoo:F2_Expression ;
                    rdfs:range lrmoo:F1_Work .
 
@@ -62,26 +67,36 @@ lrmoo:R3i_realises rdf:type owl:ObjectProperty ;
 ###  http://iflastandards.info/ns/lrm/lrmoo/R4_is_embodied_in
 lrmoo:R4_is_embodied_in rdf:type owl:ObjectProperty ;
                         owl:inverseOf lrmoo:R4i_embodies ;
+                        rdf:type owl:AsymmetricProperty ,
+                                 owl:IrreflexiveProperty ;
                         rdfs:domain lrmoo:F2_Expression ;
                         rdfs:range lrmoo:F3_Manifestation ;
                         rdfs:comment "Collega una Expression alle Manifestations corrispondenti."@it .
 
 
 ###  http://iflastandards.info/ns/lrm/lrmoo/R4i_embodies
-lrmoo:R4i_embodies rdf:type owl:ObjectProperty ;
+lrmoo:R4i_embodies rdf:type owl:ObjectProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
                    rdfs:domain lrmoo:F3_Manifestation ;
                    rdfs:range lrmoo:F2_Expression .
 
 
 ###  http://iflastandards.info/ns/lrm/lrmoo/R5i_is_component_of
-lrmoo:R5i_is_component_of rdf:type owl:ObjectProperty ;
+lrmoo:R5i_is_component_of rdf:type owl:ObjectProperty ,
+                                   owl:AsymmetricProperty ,
+                                   owl:TransitiveProperty ,
+                                   owl:IrreflexiveProperty ;
                           rdfs:domain lrmoo:F2_Expression ;
                           rdfs:range lrmoo:F2_Expression ;
                           rdfs:comment "Collega una Expression alla Expression di cui è parte."@it .
 
 
 ###  http://iflastandards.info/ns/lrm/lrmoo/R71i_is_part_of
-lrmoo:R71i_is_part_of rdf:type owl:ObjectProperty ;
+lrmoo:R71i_is_part_of rdf:type owl:ObjectProperty ,
+                               owl:AsymmetricProperty ,
+                               owl:TransitiveProperty ,
+                               owl:IrreflexiveProperty ;
                       rdfs:domain lrmoo:F3_Manifestation ;
                       rdfs:range lrmoo:F3_Manifestation ;
                       rdfs:comment "Collega una Manifestation alla Manifestation di cui è parte."@it .
@@ -90,13 +105,17 @@ lrmoo:R71i_is_part_of rdf:type owl:ObjectProperty ;
 ###  http://iflastandards.info/ns/lrm/lrmoo/R7_exemplifies
 lrmoo:R7_exemplifies rdf:type owl:ObjectProperty ;
                      owl:inverseOf lrmoo:R7i_is_exemplified_by ;
+                     rdf:type owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
                      rdfs:domain lrmoo:F5_Item ;
                      rdfs:range lrmoo:F3_Manifestation ;
                      rdfs:comment "Collega un Item alla Manifestation corrispondente."@it .
 
 
 ###  http://iflastandards.info/ns/lrm/lrmoo/R7i_is_exemplified_by
-lrmoo:R7i_is_exemplified_by rdf:type owl:ObjectProperty ;
+lrmoo:R7i_is_exemplified_by rdf:type owl:ObjectProperty ,
+                                     owl:AsymmetricProperty ,
+                                     owl:IrreflexiveProperty ;
                             rdfs:domain lrmoo:F3_Manifestation ;
                             rdfs:range lrmoo:F5_Item ;
                             rdfs:comment "Collega una Manifestation all'Item corrispondente."@it .
@@ -105,13 +124,17 @@ lrmoo:R7i_is_exemplified_by rdf:type owl:ObjectProperty ;
 ###  http://rdaregistry.info/Elements/i/P40069_has_related_work_of_item
 rdai:P40069_has_related_work_of_item rdf:type owl:ObjectProperty ;
                                      owl:inverseOf rdaw:P10310_has_related_item_of_work ;
+                                     rdf:type owl:AsymmetricProperty ,
+                                              owl:IrreflexiveProperty ;
                                      rdfs:domain lrmoo:F1_Work ;
                                      rdfs:range lrmoo:F5_Item ;
                                      rdfs:comment "Collega un'opera alle copie corrispondenti conservate presso la biblioteca dell'autore."@it .
 
 
 ###  http://rdaregistry.info/Elements/m/P30088_has_place_of_publication
-rdam:P30088_has_place_of_publication rdf:type owl:ObjectProperty ;
+rdam:P30088_has_place_of_publication rdf:type owl:ObjectProperty ,
+                                              owl:AsymmetricProperty ,
+                                              owl:IrreflexiveProperty ;
                                      rdfs:domain [ rdf:type owl:Class ;
                                                    owl:unionOf ( bibo:Periodical
                                                                  gbo:Publication
@@ -123,6 +146,8 @@ rdam:P30088_has_place_of_publication rdf:type owl:ObjectProperty ;
 ###  http://rdaregistry.info/Elements/m/P30135_has_work_manifested
 rdam:P30135_has_work_manifested rdf:type owl:ObjectProperty ;
                                 owl:inverseOf rdaw:P10072_has_manifestation_of_work ;
+                                rdf:type owl:AsymmetricProperty ,
+                                         owl:IrreflexiveProperty ;
                                 rdfs:domain lrmoo:F3_Manifestation ;
                                 rdfs:range lrmoo:F1_Work ;
                                 rdfs:comment "Collega un'edizione all'opera corrispondente."@it .
@@ -145,34 +170,44 @@ rdau:P60306_is_continued_by rdf:type owl:ObjectProperty ;
 
 
 ###  http://rdaregistry.info/Elements/w/P10072_has_manifestation_of_work
-rdaw:P10072_has_manifestation_of_work rdf:type owl:ObjectProperty ;
+rdaw:P10072_has_manifestation_of_work rdf:type owl:ObjectProperty ,
+                                               owl:AsymmetricProperty ,
+                                               owl:IrreflexiveProperty ;
                                       rdfs:domain lrmoo:F1_Work ;
                                       rdfs:range lrmoo:F3_Manifestation ;
                                       rdfs:comment "Collega un'opera alle edizioni corrispondenti."@it .
 
 
 ###  http://rdaregistry.info/Elements/w/P10310_has_related_item_of_work
-rdaw:P10310_has_related_item_of_work rdf:type owl:ObjectProperty ;
+rdaw:P10310_has_related_item_of_work rdf:type owl:ObjectProperty ,
+                                              owl:AsymmetricProperty ,
+                                              owl:IrreflexiveProperty ;
                                      rdfs:domain lrmoo:F1_Work ;
                                      rdfs:range lrmoo:F5_Item ;
                                      rdfs:comment "Collega un'opera alle copie corrispondenti conservate presso la biblioteca dell'autore."@it .
 
 
 ###  http://schema.org/author
-schema1:author rdf:type owl:ObjectProperty ;
+schema1:author rdf:type owl:ObjectProperty ,
+                        owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
                rdfs:domain lrmoo:F1_Work ;
                rdfs:range schema1:Person ;
                rdfs:comment "Collega un'opera al suo autore."@it .
 
 
 ###  http://schema.org/birthPlace
-schema1:birthPlace rdf:type owl:ObjectProperty ;
+schema1:birthPlace rdf:type owl:ObjectProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
                    rdfs:domain schema1:Person ;
                    rdfs:range schema1:Place .
 
 
 ###  http://schema.org/contributor
-schema1:contributor rdf:type owl:ObjectProperty ;
+schema1:contributor rdf:type owl:ObjectProperty ,
+                             owl:AsymmetricProperty ,
+                             owl:IrreflexiveProperty ;
                     rdfs:domain [ rdf:type owl:Class ;
                                   owl:unionOf ( gbo:Publication
                                                 gbo:PublicationComponent
@@ -183,13 +218,17 @@ schema1:contributor rdf:type owl:ObjectProperty ;
 
 
 ###  http://schema.org/deathPlace
-schema1:deathPlace rdf:type owl:ObjectProperty ;
+schema1:deathPlace rdf:type owl:ObjectProperty ,
+                            owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ;
                    rdfs:domain schema1:Person ;
                    rdfs:range schema1:Place .
 
 
 ###  http://www.cidoc-crm.org/cidoc-crm/P50_has_current_keeper
-crm:P50_has_current_keeper rdf:type owl:ObjectProperty ;
+crm:P50_has_current_keeper rdf:type owl:ObjectProperty ,
+                                    owl:AsymmetricProperty ,
+                                    owl:IrreflexiveProperty ;
                            rdfs:domain lrmoo:F5_Item ;
                            rdfs:range crm:E39_Actor ;
                            rdfs:comment "Collega una copia al luogo di conservazione corrispondente."@it .
@@ -198,6 +237,8 @@ crm:P50_has_current_keeper rdf:type owl:ObjectProperty ;
 ###  https://github.com/mod-bib/biblio-gad/ontology/carries
 gbo:carries rdf:type owl:ObjectProperty ;
             owl:inverseOf gbo:isCarriedBy ;
+            rdf:type owl:AsymmetricProperty ,
+                     owl:IrreflexiveProperty ;
             rdfs:domain gbo:PublicationComponent ;
             rdfs:range lrmoo:F2_Expression ;
             rdfs:comment "Collega una PublicationComponent alla Expression corrispondente."@it .
@@ -206,40 +247,52 @@ gbo:carries rdf:type owl:ObjectProperty ;
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasPeriodical
 gbo:hasPeriodical rdf:type owl:ObjectProperty ;
                   owl:inverseOf gbo:hasPeriodicalIssue ;
+                  rdf:type owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
                   rdfs:domain gbo:PeriodicalIssue ;
                   rdfs:range bibo:Periodical ;
                   rdfs:comment "Collega un PeriodicalIssue al periodico corrispondente."@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasPeriodicalIssue
-gbo:hasPeriodicalIssue rdf:type owl:ObjectProperty ;
+gbo:hasPeriodicalIssue rdf:type owl:ObjectProperty ,
+                                owl:AsymmetricProperty ,
+                                owl:IrreflexiveProperty ;
                        rdfs:domain bibo:Periodical ;
                        rdfs:range gbo:PeriodicalIssue ;
                        rdfs:comment "Collega un periodico ai fascicoli corrispondenti"@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasSourceWork
-gbo:hasSourceWork rdf:type owl:ObjectProperty ;
+gbo:hasSourceWork rdf:type owl:ObjectProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
                   rdfs:domain lrmoo:F1_Work ;
                   rdfs:range lrmoo:F1_Work ;
                   rdfs:comment "Collega un Work a un altro Work da cui deriva, in quanto ne riutilizza i testi."@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/isCarriedBy
-gbo:isCarriedBy rdf:type owl:ObjectProperty ;
+gbo:isCarriedBy rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
                 rdfs:domain lrmoo:F2_Expression ;
                 rdfs:range gbo:PublicationComponent ;
                 rdfs:comment "Collega una Expression alla corrispondente PublicationComponent. Rappresenta la proprietà inversa di gbo:carries."@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/isIncludedInPeriodicalIssue
-gbo:isIncludedInPeriodicalIssue rdf:type owl:ObjectProperty ;
+gbo:isIncludedInPeriodicalIssue rdf:type owl:ObjectProperty ,
+                                         owl:AsymmetricProperty ,
+                                         owl:IrreflexiveProperty ;
                                 rdfs:domain gbo:PublicationComponent ;
                                 rdfs:range gbo:PeriodicalIssue .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/isIncludedInVolume
-gbo:isIncludedInVolume rdf:type owl:ObjectProperty ;
+gbo:isIncludedInVolume rdf:type owl:ObjectProperty ,
+                                owl:AsymmetricProperty ,
+                                owl:IrreflexiveProperty ;
                        rdfs:domain gbo:PublicationComponent ;
                        rdfs:range gbo:Publication ;
                        rdfs:comment "Collega una pubblicazione al volume di cui fa parte,"@it .
@@ -248,20 +301,27 @@ gbo:isIncludedInVolume rdf:type owl:ObjectProperty ;
 ###  https://github.com/mod-bib/biblio-gad/ontology/isRepresentedBy
 gbo:isRepresentedBy rdf:type owl:ObjectProperty ;
                     owl:inverseOf gbo:represents ;
+                    rdf:type owl:AsymmetricProperty ,
+                             owl:IrreflexiveProperty ;
                     rdfs:domain gbo:PublicationComponent ;
                     rdfs:range lrmoo:F5_Item ;
                     rdfs:comment "Collega una Publication component all'Item corrispondente nella biblioteca dell'autore."@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/publisher
-gbo:publisher rdf:type owl:ObjectProperty ;
+gbo:publisher rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
               rdfs:domain gbo:Publication ;
               rdfs:range gbo:PublishingHouse ;
               rdfs:comment "Collega un'edizione alla casa editrice responsabile della pubblicazione."@it .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/represents
-gbo:represents rdf:type owl:ObjectProperty ;
+gbo:represents rdf:type owl:ObjectProperty ,
+                        owl:SymmetricProperty ,
+                        owl:IrreflexiveProperty ;
                rdfs:domain lrmoo:F5_Item ;
                rdfs:range gbo:PublicationComponent ;
                rdfs:comment "Collega una copia nella bibliioteca dell'autore alla pubblicazione corrispondente."@it .
@@ -336,7 +396,8 @@ gbo:hasIssueDetails rdf:type owl:DatatypeProperty ;
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasName
-gbo:hasName rdf:type owl:DatatypeProperty .
+gbo:hasName rdf:type owl:DatatypeProperty ;
+            rdfs:domain schema1:Person .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasNote
@@ -350,7 +411,8 @@ gbo:hasPosition rdf:type owl:DatatypeProperty ;
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasPseudonym
-gbo:hasPseudonym rdf:type owl:DatatypeProperty .
+gbo:hasPseudonym rdf:type owl:DatatypeProperty ;
+                 rdfs:domain schema1:Person .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/hasPublicationType
@@ -402,7 +464,11 @@ lrmoo:F5_Item rdf:type owl:Class .
 
 
 ###  http://purl.org/ontology/bibo/1.3/Periodical
-bibo:Periodical rdf:type owl:Class .
+bibo:Periodical rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty rdau:P60306_is_continued_by ;
+                                  owl:allValuesFrom bibo:Periodical
+                                ] .
 
 
 ###  http://schema.org/Person
@@ -423,11 +489,19 @@ gbo:PeriodicalIssue rdf:type owl:Class .
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/Publication
 gbo:Publication rdf:type owl:Class ;
-                rdfs:subClassOf lrmoo:F3_Manifestation .
+                rdfs:subClassOf lrmoo:F3_Manifestation ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty rdau:P60306_is_continued_by ;
+                                  owl:allValuesFrom gbo:Publication
+                                ] .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/PublicationComponent
-gbo:PublicationComponent rdf:type owl:Class .
+gbo:PublicationComponent rdf:type owl:Class ;
+                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                           owl:onProperty rdau:P60306_is_continued_by ;
+                                           owl:allValuesFrom gbo:PublicationComponent
+                                         ] .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/PublishingHouse
@@ -711,6 +785,10 @@ gbo:PublishingHouse rdf:type owl:Class .
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/place/place_torino
 <https://github.com/mod-bib/biblio-gad/ontology/place/place_torino> rdf:type owl:NamedIndividual .
+
+
+###  https://github.com/mod-bib/biblio-gad/ontology/publication/publication_RR1
+<https://github.com/mod-bib/biblio-gad/ontology/publication/publication_RR1> rdf:type owl:NamedIndividual .
 
 
 ###  https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944
