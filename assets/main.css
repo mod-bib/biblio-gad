@@ -187,7 +187,17 @@ nav a:hover {
 
 #sidebar-case-1 > h1 {
     justify-self: end;
-    padding-right: 0.5em;
+    padding-right: 1em;
+}
+
+#filters-case-1 {
+    list-style-type: none;
+}
+
+#filters-case-1 li {
+    color: darkslategray;
+    font-weight: bold;
+    padding: 0.5em;
 }
 
 #case-studies-title {
