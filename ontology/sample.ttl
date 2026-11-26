@@ -13,9 +13,9 @@
 
 lrmoo:R2_is_derivative_of a owl:ObjectProperty .
 
-lrmoo:R3i_realises a owl:ObjectProperty .
-
 lrmoo:R3_is_realised_by a owl:ObjectProperty .
+
+lrmoo:R3i_realises a owl:ObjectProperty .
 
 lrmoo:R4_is_embodied_in a owl:ObjectProperty .
 
@@ -51,6 +51,8 @@ schema1:birthDate a owl:DatatypeProperty .
 
 schema1:birthPlace a owl:ObjectProperty .
 
+schema1:contributor a owl:ObjectProperty .
+
 schema1:deathDate a owl:DatatypeProperty .
 
 schema1:deathPlace a owl:ObjectProperty .
@@ -61,7 +63,7 @@ schema1:pagination a owl:DatatypeProperty .
 
 crm:P50_has_current_keeper a owl:ObjectProperty .
 
-schema:contributor a owl:ObjectProperty .
+gbo:carries a owl:ObjectProperty .
 
 gbo:hasCompositionDateFrom a owl:DatatypeProperty .
 
@@ -69,7 +71,7 @@ gbo:hasCompositionDateTo a owl:DatatypeProperty .
 
 gbo:hasIdentifier a owl:DatatypeProperty .
 
-gbo:carries a owl:ObjectProperty .
+gbo:hasIssueDetails a owl:DatatypeProperty .
 
 gbo:hasName a owl:DatatypeProperty .
 
@@ -83,15 +85,15 @@ gbo:hasPosition a owl:DatatypeProperty .
 
 gbo:hasPseudonym a owl:DatatypeProperty .
 
+gbo:hasPublicationComponent a owl:ObjectProperty .
+
 gbo:hasPublicationType a owl:DatatypeProperty .
 
 gbo:hasSourceWork a owl:ObjectProperty .
 
-gbo:publisher a owl:ObjectProperty .
-
 gbo:hasTitle a owl:DatatypeProperty .
 
-gbo:hasIssueDetails a owl:DatatypeProperty .
+gbo:hasWork a owl:ObjectProperty .
 
 gbo:isAnnotated a owl:DatatypeProperty .
 
@@ -104,8 +106,6 @@ gbo:isIncludedInVolume a owl:ObjectProperty .
 gbo:isPartOfSection a owl:DatatypeProperty .
 
 gbo:isRepresentedBy a owl:ObjectProperty .
-
-gbo:represents a owl:ObjectProperty .
 
 #actors
 
@@ -120,13 +120,13 @@ gbo:represents a owl:ObjectProperty .
 # persons and places
 
 <https://github.com/mod-bib/biblio-gad/ontology/person/person_ceg> a schema1:Person ;
-    schema1:birthDate "1893-11-14"^^xsd:date ;
+    schema1:birthDate "1893-04-14"^^xsd:date ;
     schema1:birthPlace <https://github.com/mod-bib/biblio-gad/ontology/place/place_milano> ;
     schema1:deathDate "1973-05-21"^^xsd:date ;
     schema1:deathPlace <https://github.com/mod-bib/biblio-gad/ontology/place/place_roma> ;
     gbo:hasIdentifier "person_ceg"^^xsd:string ;
     gbo:hasName "Carlo Emilio Gadda"^^xsd:string ;
-    gbo:hasPseudonym "Alì Oco de Madrigal; Alis Oco de Madrigal; Aligi di Ca da l'Ormo"^^xsd:string .
+    gbo:hasPseudonym "Alì Oco de Madrigal;Alis Oco de Madrigal;Aligi di Ca da l'Ormo"^^xsd:string .
 
 <https://github.com/mod-bib/biblio-gad/ontology/person/person_lucchini> a schema1:Person ;
     gbo:hasIdentifier "person_lucchini"^^xsd:string ;
@@ -155,14 +155,14 @@ gbo:represents a owl:ObjectProperty .
         <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_seconda_edizione>,
         <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf>,
         <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico> ;
-    rdaw:P10072_has_manifestation_of_work <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1944>,
+    schema1:genre "Racconto"^^xsd:string ;
+    gbo:hasIdentifier "work_al_parco_in_una_sera_di_maggio"^^xsd:string ;
+    gbo:hasPublicationComponent <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1944>,
         <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1945>,
         <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1955>,
         <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1988>,
         <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_2012>,
         <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_benignità_1943> ;
-    schema1:genre "Racconto"^^xsd:string ;
-    gbo:hasIdentifier "work_al_parco_in_una_sera_di_maggio"^^xsd:string ;
     gbo:hasSourceWork <https://github.com/mod-bib/biblio-gad/ontology/work/work_fulmine> ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string .
 
@@ -181,9 +181,9 @@ gbo:represents a owl:ObjectProperty .
 
 <https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano> a lrmoo:F1_Work ;
     lrmoo:R3_is_realised_by <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_centrale_di_cornigliano> ;
-    rdaw:P10072_has_manifestation_of_work <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953> ;
     schema1:genre "Saggio"^^xsd:string ;
     gbo:hasIdentifier "work_la_centrale_di_cornigliano"^^xsd:string ;
+    gbo:hasPublicationComponent <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953> ;
     gbo:hasTitle "La centrale di Cornigliano"^^xsd:string .
 
 <https://github.com/mod-bib/biblio-gad/ontology/work/work_fulmine> a lrmoo:F1_Work ;
@@ -241,67 +241,68 @@ gbo:represents a owl:ObjectProperty .
 # publication components
 
 <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1944> a gbo:PublicationComponent ;
-    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     schema1:pagination "297-340"^^xsd:string ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps> ;
     gbo:hasIdentifier "publicationcomponent_al_parco_in_una_sera_di_maggio_1944"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
+    gbo:hasWork <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944> .
 
 <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1945> a gbo:PublicationComponent ;
-    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_seconda_edizione> ;
     gbo:hasIdentifier "publicationcomponent_al_parco_in_una_sera_di_maggio_1945"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
+    gbo:hasWork <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945> .
 
 <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1955> a gbo:PublicationComponent ;
-    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf> ;
     gbo:hasIdentifier "publicationcomponent_al_parco_in_una_sera_di_maggio_1955"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
+    gbo:hasWork <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1955> .
 
 <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_1988> a gbo:PublicationComponent ;
-    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     schema1:pagination "481-507"^^xsd:string ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_sf> ;
     gbo:hasIdentifier "publicationcomponent_al_parco_in_una_sera_di_maggio_1988"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
+    gbo:hasWork <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1988> .
 
 <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_al_parco_in_una_sera_di_maggio_2012> a gbo:PublicationComponent ;
-    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     schema1:pagination "231-262"^^xsd:string ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_al_parco_in_una_sera_di_maggio_princeps> ;
     gbo:hasIdentifier "publicationcomponent_al_parco_in_una_sera_di_maggio_2012"^^xsd:string ;
     gbo:hasPublicationType "Prosa/racconto in volume"^^xsd:string ;
     gbo:hasTitle "Al Parco, in una sera di maggio"^^xsd:string ;
+    gbo:hasWork <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     gbo:isIncludedInVolume <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_2012> .
 
 <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_benignità_1943> a gbo:PublicationComponent ;
     rdam:P30011_has_date_of_publication "1943-07-15"^^xsd:date ;
-    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     schema1:pagination "253"^^xsd:string ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_benignità_periodico> ;
     gbo:hasIdentifier "publicationcomponent_la_benignità_1943"^^xsd:string ;
-    gbo:hasPublicationType "Testo in rivista"^^xsd:string ;
+    gbo:hasPublicationType "Prosa/racconto su pubblicazione periodica"^^xsd:string ;
     gbo:hasTitle "La benignità"^^xsd:string ;
+    gbo:hasWork <https://github.com/mod-bib/biblio-gad/ontology/work/work_al_parco_in_una_sera_di_maggio> ;
     gbo:isIncludedInPeriodicalIssue <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_primato_A4_N14> .
 
 <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953> a gbo:PublicationComponent ;
     rdam:P30011_has_date_of_publication "1953-01"^^xsd:gYearMonth ;
-    rdam:P30135_has_work_manifested <https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano> ;
     schema1:pagination "54-56"^^xsd:string ;
     gbo:carries <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_centrale_di_cornigliano> ;
     gbo:hasIdentifier "publicationcomponent_la_centrale_di_cornigliano_1953"^^xsd:string ;
-    gbo:hasPublicationType "Testo in rivista"^^xsd:string ;
+    gbo:hasPublicationType "Articolo/saggio in rivista"^^xsd:string ;
     gbo:hasTitle "La centrale di Cornigliano"^^xsd:string ;
-    gbo:isIncludedInPeriodicalIssue <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N5> .
+    gbo:hasWork <https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano> ;
+    gbo:isIncludedInPeriodicalIssue <https://github.com/mod-bib/biblio-gad/ontology/periodicalissue/periodicalissue_civiltà_delle_macchine_A1_N5> ;
+    gbo:isRepresentedBy <https://github.com/mod-bib/biblio-gad/ontology/item/item_centrale_1953_bal> .
 
 # publications
 
@@ -326,6 +327,8 @@ gbo:represents a owl:ObjectProperty .
 
 <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945> a gbo:Publication ;
     lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_seconda_edizione> ;
+    lrmoo:R7i_is_exemplified_by <https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1945_bal>,
+        <https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1945_btm> ;
     rdam:P30011_has_date_of_publication "1945"^^xsd:gYear ;
     rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze> ;
     rdam:P30106_has_series_statement "Quaderni di letteratura e d'arte;8-9"^^xsd:string ;
@@ -368,6 +371,8 @@ gbo:represents a owl:ObjectProperty .
 
 <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944> a gbo:Publication ;
     lrmoo:R4i_embodies <https://github.com/mod-bib/biblio-gad/ontology/expression/expression_la_princeps> ;
+    lrmoo:R7i_is_exemplified_by <https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1943_bal>,
+        <https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1944_btm> ;
     rdam:P30011_has_date_of_publication "1944"^^xsd:gYear ;
     rdam:P30088_has_place_of_publication <https://github.com/mod-bib/biblio-gad/ontology/place/place_firenze> ;
     rdam:P30106_has_series_statement "Quaderni di letteratura e d'arte;8-9"^^xsd:string ;
@@ -381,11 +386,10 @@ gbo:represents a owl:ObjectProperty .
 # items
 
 <https://github.com/mod-bib/biblio-gad/ontology/item/item_centrale_1953_bal> a lrmoo:F5_Item ;
-    lrmoo:R7_exemplifies <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953> ;
     rdai:P40069_has_related_work_of_item <https://github.com/mod-bib/biblio-gad/ontology/work/work_la_centrale_di_cornigliano> ;
     crm:P50_has_current_keeper <https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal> ;
     gbo:hasIdentifier "item_centrale_1953_bal"^^xsd:string ;
-    gbo:hasNote "False"^^xsd:string ;
+    gbo:hasNote "Estratto da «Civiltà delle macchine»"^^xsd:string ;
     gbo:hasTitle "La centrale di Cornigliano"^^xsd:string ;
     gbo:isAnnotated false ;
     gbo:represents <https://github.com/mod-bib/biblio-gad/ontology/publicationcomponent/publicationcomponent_la_centrale_di_cornigliano_1953> .
@@ -395,34 +399,31 @@ gbo:represents a owl:ObjectProperty .
     rdai:P40069_has_related_work_of_item <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
     crm:P50_has_current_keeper <https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal> ;
     gbo:hasIdentifier "item_l'a_1943_bal"^^xsd:string ;
-    gbo:hasNote "True"^^xsd:string ;
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
-    gbo:isAnnotated false .
+    gbo:isAnnotated true .
 
 <https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1944_btm> a lrmoo:F5_Item ;
     lrmoo:R7_exemplifies <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1944> ;
     rdai:P40069_has_related_work_of_item <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
     crm:P50_has_current_keeper <https://github.com/mod-bib/biblio-gad/ontology/actor/actor_btm> ;
     gbo:hasIdentifier "item_l'a_1944_btm"^^xsd:string ;
-    gbo:hasNote "True"^^xsd:string ;
+    gbo:hasNote "Postille per il tipografo"^^xsd:string ;
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
-    gbo:isAnnotated false .
+    gbo:isAnnotated true .
 
 <https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1945_bal> a lrmoo:F5_Item ;
     lrmoo:R7_exemplifies <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945> ;
     rdai:P40069_has_related_work_of_item <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
     crm:P50_has_current_keeper <https://github.com/mod-bib/biblio-gad/ontology/actor/actor_bal> ;
     gbo:hasIdentifier "item_l'a_1945_bal"^^xsd:string ;
-    gbo:hasNote "True"^^xsd:string ;
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
-    gbo:isAnnotated false .
+    gbo:isAnnotated true .
 
 <https://github.com/mod-bib/biblio-gad/ontology/item/item_la_1945_btm> a lrmoo:F5_Item ;
     lrmoo:R7_exemplifies <https://github.com/mod-bib/biblio-gad/ontology/publication/publication_la_1945> ;
     rdai:P40069_has_related_work_of_item <https://github.com/mod-bib/biblio-gad/ontology/work/work_la> ;
     crm:P50_has_current_keeper <https://github.com/mod-bib/biblio-gad/ontology/actor/actor_btm> ;
     gbo:hasIdentifier "item_l'a_1945_btm"^^xsd:string ;
-    gbo:hasNote "False"^^xsd:string ;
     gbo:hasTitle "L'Adalgisa - Disegni milanesi"^^xsd:string ;
     gbo:isAnnotated false .
 
@@ -431,6 +432,14 @@ gbo:represents a owl:ObjectProperty .
 <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_adelphi> a gbo:PublishingHouse ;
     rdfs:label "Adelphi"^^xsd:string ;
     gbo:hasIdentifier "publishinghouse_adelphi"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_einaudi> a gbo:PublishingHouse ;
+    rdfs:label "Einaudi"^^xsd:string ;
+    gbo:hasIdentifier "publishinghouse_einaudi"^^xsd:string .
+
+<https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_garzanti> a gbo:PublishingHouse ;
+    rdfs:label "Garzanti"^^xsd:string ;
+    gbo:hasIdentifier "publishinghouse_garzanti"^^xsd:string .
 
 <https://github.com/mod-bib/biblio-gad/ontology/publishinghouse/publishinghouse_le_monnier> a gbo:PublishingHouse ;
     rdfs:label "Le Monnier"^^xsd:string ;
