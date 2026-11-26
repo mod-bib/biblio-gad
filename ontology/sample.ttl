@@ -27,6 +27,10 @@ lrmoo:R71i_is_part_of a owl:ObjectProperty .
 
 lrmoo:R7_exemplifies a owl:ObjectProperty .
 
+gbo:publisher a owl:ObjectProperty .
+
+gbo:represents a owl:ObjectProperty .
+
 lrmoo:R7i_is_exemplified_by a owl:ObjectProperty .
 
 rdai:P40069_has_related_work_of_item a owl:ObjectProperty .
