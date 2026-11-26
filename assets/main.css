@@ -174,6 +174,22 @@ nav a:hover {
     font-size: 1.5em;
 }
 
+#wrapper-case-1 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-top: 1px solid gray;
+    margin-top: 2em;
+}
+
+#sidebar-case-1 {
+    border-right: 1px solid gray;
+}
+
+#sidebar-case-1 > h1 {
+    justify-self: end;
+    padding-right: 0.5em;
+}
+
 #case-studies-title {
     font-size: 3.5em;
     color: darkslategray;
@@ -181,7 +197,7 @@ nav a:hover {
     text-align: center;
 }
 
-#case-1-sec-title, #case-2-sec-title {
+#case-1-sec-title {
     height: 20em;
     display: grid;
     justify-content: center;
@@ -193,11 +209,46 @@ nav a:hover {
     background-size: cover;
 }
 
-#case-1-title, #case-2-title {
+#case-2-sec-title {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-content: center;
+    background-color: rgba(148, 140, 174, 0.3);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#case-1-title, #case-2-title-mdi, #case-2-title-a, #case-2-title-vlc, #case-2-title-mdi-a{
     font-weight: bold;
     color: darkslategray;
     /*color: midnightblue;*/
     font-size: 4em;
+}
+
+#case-2-title-mdi {
+    text-align: right;
+    margin-right:0.5em;
+    align-self: center;
+}
+
+#case-2-title-a {
+    text-align: left;
+    margin-left:0.5em;
+    align-self: center;
+}
+
+#case-2-title-vlc {
+    text-align: right;
+    margin-right:0.5em;
+    align-self: center;
+}
+
+#case-2-title-mdi-a {
+    text-align: left;
+    margin-left:0.5em;
+    align-self: center;
 }
 
 #opere-p {
